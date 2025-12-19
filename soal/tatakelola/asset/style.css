@@ -1,0 +1,562 @@
+:root {
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --muted: #6b7280;
+    --text: #0f172a;
+    --accent: #0ea5e9;
+    --accent-600: #0284c7;
+    --success: #10b981;
+    --danger: #ef4444;
+    --glass: rgba(2, 6, 23, 0.04);
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+}
+.container {
+    max-width: 1180px;
+    margin: 22px auto;
+    padding: 14px;
+}
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+.topbar .brand {
+    font-weight: 700;
+    font-size: 18px;
+}
+.topbar .meta {
+    color: var(--muted);
+    font-size: 13px;
+}
+.timer.big {
+    font-weight: 800;
+    color: var(--accent-600);
+    font-size: 20px;
+}
+.timer.small {
+    font-weight: 700;
+    color: var(--muted);
+    font-size: 13px;
+}
+.btn {
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(180deg, var(--accent), var(--accent-600));
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn.ghost {
+    background: transparent;
+    border: 1px solid var(--glass);
+    color: var(--text);
+}
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 18px;
+}
+.card {
+    background: var(--surface);
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 8px 30px rgba(2, 6, 23, 0.06);
+}
+.qcard {
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.question-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+.choices {
+    display: grid;
+    gap: 10px;
+}
+.choice {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(15, 23, 42, 0.04);
+    cursor: pointer;
+    transition: transform 0.14s, box-shadow 0.14s;
+}
+.choice:focus {
+    outline: 2px solid rgba(14, 165, 233, 0.14);
+}
+.choice:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(2, 6, 23, 0.06);
+}
+.choice .key {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background: rgba(2, 6, 23, 0.03);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+.choice.selected {
+    background: linear-gradient(
+        90deg,
+        rgba(14, 165, 233, 0.06),
+        rgba(14, 165, 233, 0.02)
+    );
+    border-color: rgba(14, 165, 233, 0.12);
+}
+.choice.selected {
+    outline: 3px solid rgba(2, 132, 199, 0.12);
+    box-shadow: 0 6px 18px rgba(2, 132, 199, 0.06);
+}
+.choice.correct {
+    border-color: var(--success);
+    background: rgba(16, 185, 129, 0.06);
+}
+.choice.incorrect {
+    border-color: var(--danger);
+    background: rgba(239, 68, 68, 0.04);
+}
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.progress-row {
+    margin-top: 10px;
+}
+.progress-bar {
+    height: 10px;
+    background: rgba(2, 6, 23, 0.04);
+    border-radius: 999px;
+    overflow: hidden;
+}
+.progress-bar i {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--accent-600));
+    width: 0%;
+}
+.nav-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    margin-top: 12px;
+}
+
+/* --- NAVIGATION ITEM (lebih kecil) --- */
+.nav-item {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px; /* sebelumnya 44px → kecil */
+    height: 34px; /* sebelumnya 44px */
+    margin: 4px; /* agar lebih rapat */
+    padding: 0;
+
+    font-size: 13px; /* mengecilkan angka */
+    font-weight: 700;
+
+    border-radius: 6px;
+    background: #ffffff;
+    border: 1px solid rgba(2, 6, 23, 0.08);
+    box-shadow: 0 3px 8px rgba(2, 6, 23, 0.04);
+    cursor: pointer;
+}
+
+/* --- BADGE JAWABAN (lebih kecil & tidak nempel) --- */
+.nav-item .ans-badge {
+    position: absolute;
+    top: -4px; /* lebih dekat */
+    right: -4px;
+
+    min-width: 16px; /* sebelumnya 20px */
+    height: 16px;
+    padding: 0 4px;
+
+    font-size: 10px; /* sebelumnya 12px */
+    line-height: 16px;
+
+    color: #fff;
+    border-radius: 999px;
+    box-shadow: 0 3px 8px rgba(2, 6, 23, 0.12);
+}
+
+/* Current question highlight */
+.nav-item.current {
+    border-color: #0284c7;
+    background: #e0f7ff;
+}
+
+/* Answered */
+.nav-item.answered {
+    background: #e6fff3;
+    border-color: #10b981;
+}
+
+/* Locked (bila diperlukan) */
+.nav-item.locked {
+    opacity: 0.6;
+}
+
+.nav-item.answered .ans-badge {
+    background: linear-gradient(
+        90deg,
+        rgba(16, 185, 129, 0.12),
+        rgba(16, 185, 129, 0.06)
+    );
+    color: #065f46;
+}
+.nav-item.locked {
+    opacity: 0.5;
+}
+.nav-item.current {
+    box-shadow: 0 6px 18px rgba(2, 132, 199, 0.06);
+    border: 1px solid rgba(2, 132, 199, 0.12);
+}
+.submit {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background: linear-gradient(180deg, var(--danger), #dc2626);
+    color: white;
+    border: none;
+    font-weight: 800;
+}
+.score-card {
+    text-align: center;
+}
+.score-val {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--accent-600);
+}
+.small {
+    font-size: 13px;
+}
+.muted {
+    color: var(--muted);
+}
+.foot {
+    margin-top: 14px;
+    text-align: center;
+    color: var(--muted);
+}
+
+/* Landing styles */
+.page-landing .landing-wrap {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 18px;
+}
+.landing-card {
+    background: var(--surface);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 12px 40px rgba(2, 6, 23, 0.06);
+}
+.brand-row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.logo-mark {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-600));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 800;
+}
+.landing-actions {
+    margin-top: 14px;
+    display: flex;
+    gap: 12px;
+}
+.landing-body ul {
+    margin-left: 18px;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: var(--accent);
+    color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+.navbar .brand {
+    font-weight: 800;
+}
+.navbar .nav-meta {
+    opacity: 0.95;
+}
+
+/* footer solid */
+.footer-solid {
+    background: #0f172a;
+    color: white;
+    padding: 14px;
+    border-radius: 8px;
+    margin-top: 18px;
+    text-align: center;
+    box-shadow: 0 -6px 24px rgba(2, 6, 23, 0.06);
+}
+
+/* modal start */
+.modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(2, 6, 23, 0.45);
+    backdrop-filter: blur(4px);
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.18s;
+}
+.modal.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal-card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    max-width: 520px;
+    width: 94%;
+    text-align: left;
+    box-shadow: 0 12px 40px rgba(2, 6, 23, 0.12);
+}
+.modal-card h2 {
+    margin: 0 0 8px 0;
+}
+.modal-card .muted {
+    color: #6b7280;
+}
+
+/* watermark */
+.watermark {
+    position: fixed;
+    right: 12px;
+    bottom: 12px;
+    opacity: 0.28;
+    font-weight: 700;
+    color: #0f172a;
+    background: transparent;
+    z-index: 9998;
+    pointer-events: none;
+}
+
+/* kiosk helpers - hide scrollbars etc */
+.kiosk-mode {
+    overflow: hidden;
+}
+
+/* Desktop normal */
+.main-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+/* Make kiosk-mode allow scrolling on small screens */
+@media (max-width: 980px) {
+    body.page-test.kiosk-mode {
+        overflow: auto !important;
+        -webkit-overflow-scrolling: touch;
+        padding-top: 100px; /* ensure navbar won't cover content */
+    }
+
+    /* main grid becomes single column earlier for better spacing */
+    .page-test .main-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 12px;
+    }
+
+    /* sidebar becomes top card (stacked) */
+    .page-test .panel-side,
+    .page-test .panel-side .card {
+        position: relative;
+        width: 100%;
+    }
+
+    /* navigation grid: more columns but smaller items */
+    .page-test .nav-grid {
+        grid-template-columns: repeat(auto-fit, minmax(36px, 1fr));
+        gap: 6px;
+    }
+
+    /* nav item smaller touch-friendly */
+    .page-test .nav-item {
+        width: 36px !important;
+        height: 34px !important;
+        font-size: 12px !important;
+        padding: 0;
+    }
+
+    .page-test .nav-item .ans-badge {
+        top: -6px;
+        right: -6px;
+        min-width: 14px;
+        height: 14px;
+        font-size: 10px;
+    }
+
+    /* choice sizing for mobile */
+    .page-test .choice {
+        padding: 10px;
+        gap: 10px;
+    }
+    .page-test .choice .key {
+        width: 36px;
+        height: 36px;
+        font-size: 13px;
+    }
+}
+
+/* very small phones */
+@media (max-width: 420px) {
+    body.page-test.kiosk-mode {
+        padding-top: 110px;
+    }
+    .page-test .nav-grid {
+        grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+        gap: 6px;
+    }
+    .page-test .nav-item {
+        width: 30px !important;
+        height: 28px !important;
+        font-size: 11px !important;
+    }
+    .page-test .choice .key {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .page-test .choice {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Ensure simResultsInline (inline simulation results) is scrollable and responsive */
+#simResultsInline {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 18px auto;
+    max-width: 1100px;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid rgba(2, 6, 23, 0.06);
+    box-shadow: 0 12px 36px rgba(2, 6, 23, 0.06);
+    padding: 16px;
+    max-height: 78vh;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* ensure when sim results shown, the main wrapper hidden state won't collapse page height */
+#mainWrapper[style*="display: none"] {
+    /* keep some minimal height to avoid viewport collapse on mobile */
+    min-height: 40vh;
+}
+
+/* fix potential body overflow left after closing sim results */
+.page-test .showing-sim-results body,
+.page-test .showing-sim-results html {
+    overflow: hidden;
+}
+
+/* ensure modal is usable on small screens */
+.modal-card {
+    max-width: 480px !important;   /* dulu 94% → terlalu panjang */
+    width: 90% !important;
+    margin: 0 auto;
+
+    border-radius: 14px;
+    padding: 22px;
+}
+
+.modal.visible {
+    padding: 12px;
+}
+
+/* make footer remain visible and not overlap content on small screens */
+.page-test .footer-solid {
+    position: relative;
+    margin-top: 22px;
+}
+
+/* Fix for sticky sidebar on short viewports: make it static on smaller screens */
+@media (max-width: 980px) {
+    .sidebar {
+        position: relative;
+        top: auto;
+        height: auto;
+        max-height: none;
+        overflow: visible;
+    }
+}
+
+/* Accessibility: larger hit area for nav items on touch */
+@media (hover: none) and (pointer: coarse) {
+    .page-test .nav-item {
+        padding: 6px 0;
+        min-height: 36px;
+        min-width: 36px;
+    }
+    .page-test .choice {
+        touch-action: manipulation;
+    }
+}
+
+/* minor visual: ensure progress bar always fits on small screens */
+.page-test .progress-bar {
+    min-width: 80px;
+}
+
+/* final safety: revert any explicit body overflow left by scripts */
+@media (max-width: 1200px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    .modal-card {
+        max-width: 480px !important;
+    }
+}
+
+/* Di HP lebih kecil sedikit */
+@media (max-width: 480px) {
+    .modal-card {
+        max-width: 92% !important;
+        padding: 16px;
+    }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Dashboard Ujian — PERSIAPAN_UJIAN</title>
+        <link rel="stylesheet" href="assets/style.css" />
+    </head>
+    <body>
+        <header class="navbar">
+            <div class="container nav-inner">
+                <div class="brand">
+                    <div class="logo">PERSIAPAN_UJIAN</div>
+                    <div class="tag">Simulasi & Ujian Online</div>
+                </div>
+
+                <div class="top-controls">
+                    <div class="search-wrap">
+                        <input
+                            id="searchInput"
+                            placeholder="Cari mata kuliah atau tutor..."
+                            aria-label="Search"
+                        />
+                        <button id="clearSearch" class="icon-btn" title="Clear">
+                            ✕
+                        </button>
+                    </div>
+
+                    <div class="quick-actions">
+                        <button id="btnCreate" class="btn small">
+                            Buat Simulasi
+                        </button>
+                        <div class="user">
+                            <div class="user-name">Andrast Setiawan</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="layout container">
+            <aside class="sidebar" aria-label="Sidebar navigation">
+                <div class="side-header">
+                    <div class="side-title">Mata Kuliah</div>
+                    <div class="side-sub muted">Klik untuk buka ujian</div>
+                </div>
+
+                <nav class="side-nav" id="sideNav" role="navigation">
+                    <!-- injected -->
+                </nav>
+
+                <div class="side-footer muted">
+                    Versi 1.0 • © <span id="year"></span>
+                </div>
+            </aside>
+
+            <main class="main" role="main">
+                <div class="panel controls">
+                    <div class="controls-left">
+                        <label class="select">
+                            <select id="sortSelect" title="Sort">
+                                <option value="name">
+                                    Sort by course name
+                                </option>
+                                <option value="progress">
+                                    Sort by progress
+                                </option>
+                            </select>
+                        </label>
+
+                        <label class="select">
+                            <select id="viewSelect" title="View">
+                                <option value="card">Card</option>
+                                <option value="list">List</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="controls-right">
+                        <div class="hint muted">
+                            Tip: tekan "/" untuk fokus pencarian
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="page-title">Course overview</h2>
+
+                <section id="coursesGrid" class="grid" aria-live="polite">
+                    <!-- injected -->
+                </section>
+            </main>
+        </div>
+
+        <footer class="footer">
+            <div class="container footer-inner">
+                <div>Made with ♥ for exam prep — PERSIAPAN_UJIAN</div>
+                <div class="muted">Contact: admin@example.com</div>
+            </div>
+        </footer>
+
+        <template id="cardTpl">
+            <article class="card">
+                <div class="card-media" aria-hidden="true"></div>
+                <div class="card-body">
+                    <h3 class="card-title"></h3>
+                    <div class="card-sub">TUTOR / KATEGORI</div>
+                    <div class="card-cta">
+                        <button class="enter-btn">Open course</button>
+                    </div>
+                    <div class="card-progress">
+                        <div class="progress-line">
+                            <i style="width: 0%"></i>
+                        </div>
+                        <div class="progress-text">0% complete</div>
+                    </div>
+                </div>
+                <button class="card-menu" title="Options">⋮</button>
+            </article>
+        </template>
+
+        <script src="assets/script.js" defer></script>
+    </body>
+</html>

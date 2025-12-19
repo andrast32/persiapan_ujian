@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Ujian — Kewirausahaan di Era Digital</title>
+        <link rel="stylesheet" href="asset/style.css" />
+    </head>
+    <body class="page-test kiosk-mode">
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <div class="nav-left">
+                <div class="brand">Ujian Interaktif</div>
+                <div class="nav-meta muted">Kewirausahaan di Era Digital</div>
+            </div>
+            <div class="nav-right">
+                <div class="muted">
+                    Peserta: <strong id="userName">Peserta</strong>
+                </div>
+                <div style="width: 12px"></div>
+                <div class="muted">
+                    Sisa ujian: <strong id="overallTimer">--:--:--</strong>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <header class="topbar">
+                <div class="left">
+                    <div class="meta small">
+                        Soal <strong id="qIndex">0</strong>/<span id="qTotal"
+                            >0</span
+                        >
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="timer big" id="perQuestionTimer">00:00</div>
+                    <div class="small muted">Sisa waktu soal</div>
+                </div>
+            </header>
+
+            <main class="main-grid" id="mainWrapper">
+                <section class="panel panel-questions" id="questionPanel">
+                    <div class="card qcard" id="mainQ">
+                        <div class="question-title" id="questionText">
+                            Pilih mode di layar awal untuk mulai.
+                        </div>
+                        <div class="choices" id="choices" role="list"></div>
+
+                        <div class="controls">
+                            <div class="left muted" id="hintArea">
+                                Shortcut: A/B/C/D pilih — ← → prev/next — S
+                                submit (aktif jika muncul)
+                            </div>
+                            <div class="right">
+                                <button id="prevBtn" class="btn ghost">
+                                    Prev
+                                </button>
+                                <button id="nextBtn" class="btn">Next</button>
+                            </div>
+                        </div>
+
+                        <div id="explainArea"></div>
+                    </div>
+                </section>
+
+                <aside class="panel panel-side">
+                    <div class="card">
+                        <div class="panel-title">Navigasi Soal</div>
+                        <div class="progress-row">
+                            <div id="progressBar" class="progress-bar">
+                                <i style="width: 0%"></i>
+                            </div>
+                        </div>
+                        <div class="nav-grid" id="navPanel"></div>
+                        <div style="height: 12px"></div>
+                        <div class="submit-wrap">
+                            <button id="submitBtn" class="btn submit hidden">
+                                Selesai & Lihat Nilai
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card score-card">
+                        <div class="score-label">Skor</div>
+                        <div class="score-val" id="score">0</div>
+                        <div class="score-sub muted">
+                            Nilai (0–100): <span id="scaledScore">0.00</span>
+                        </div>
+                        <div style="height: 12px"></div>
+                        <button id="exportBtn" class="btn ghost">
+                            Export Hasil (CSV)
+                        </button>
+                    </div>
+                </aside>
+            </main>
+
+            <footer class="footer-solid">
+                <div>Universitas Terbuka — Kewirausahaan di Era Digital</div>
+                <div class="muted small">
+                    Dilarang mencontek. Sistem akan memberi peringatan jika
+                    perilaku mencurigakan terdeteksi.
+                </div>
+            </footer>
+        </div>
+
+        <!-- START MODAL: Simulasi atau Mulai -->
+        <div id="startModal" class="modal visible">
+            <div class="modal-card">
+                <h2>Pilih Mode</h2>
+                <p class="muted">
+                    Simulasi: latihan dengan soal sangat mudah. Mulai Ujian:
+                    mode resmi dengan fullscreen dan pencatatan perilaku.
+                </p>
+                <div style="display: flex; gap: 10px; margin-top: 14px">
+                    <button id="simBtn" class="btn ghost">
+                        Simulasi Ujian
+                    </button>
+                    <button id="beginBtn" class="btn primary">
+                        Mulai Ujian
+                    </button>
+                </div>
+                <div style="margin-top: 10px" class="muted small">
+                    Catatan: untuk pengamanan penuh gunakan Safe Exam Browser
+                    atau layanan proctoring.
+                </div>
+            </div>
+        </div>
+
+        <!-- watermark overlay -->
+        <div id="watermark" class="watermark">
+            Peserta: Peserta — <span id="wmTime">--:--:--</span>
+        </div>
+
+        <!-- QUESTION BANK (separate file) -->
+        <script src="asset/soal.js"></script>
+        <!-- ENGINE -->
+        <script src="asset/script.js"></script>
+    </body>
+</html>
