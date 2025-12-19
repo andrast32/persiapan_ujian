@@ -3,928 +3,672 @@
 // 50 soal x 2 poin = total 100 poin
 window.QUESTION_BANK = [
     {
-        id: "g001",
-        question: "Apa definisi singkat dari tata kelola TI (IT governance)?",
+        id: "t1",
+        question: "Tata kelola Teknologi Informasi (TI) adalah …",
         choices: [
-            {
-                id: "A",
-                text: "Kumpulan proses dan struktur yang memastikan IT mendukung tujuan bisnis dan mengelola risiko",
-            },
-            { id: "B", text: "Teknik pemrograman untuk aplikasi enterprise" },
-            { id: "C", text: "Hanya kebijakan keamanan jaringan" },
-            { id: "D", text: "Manajemen helpdesk semata" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "IT governance memastikan keputusan TI selaras dengan strategi organisasi, mengelola risiko, dan mengoptimalkan nilai.",
-    },
-    {
-        id: "g002",
-        question:
-            "Manakah kerangka kerja (framework) yang sering dipakai untuk tata kelola TI?",
-        choices: [
-            { id: "A", text: "COBIT" },
-            { id: "B", text: "React" },
-            { id: "C", text: "Node.js" },
-            { id: "D", text: "Bootstrap" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "COBIT (Control Objectives for Information and Related Technologies) adalah framework populer untuk governance dan manajemen TI.",
-    },
-    {
-        id: "g003",
-        question:
-            "Apa perbedaan utama antara governance dan management dalam konteks TI?",
-        choices: [
-            {
-                id: "A",
-                text: "Governance menetapkan arah/keputusan (what & why), management menjalankan & mengimplementasikan (how & who)",
-            },
+            { id: "A", text: "Pengelolaan perangkat keras" },
             {
                 id: "B",
-                text: "Governance hanya teknis, management hanya administratif",
+                text: "Sistem untuk memastikan TI mendukung tujuan organisasi",
             },
-            { id: "C", text: "Tidak ada perbedaan" },
-            { id: "D", text: "Governance melakukan coding" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Governance fokus pada arah strategis, kebijakan, dan pengawasan; management menangani pelaksanaan operasional dan delivery.",
-    },
-    {
-        id: "g004",
-        question: "Salah satu tujuan utama IT governance adalah ...",
-        choices: [
-            {
-                id: "A",
-                text: "Mengoptimalkan nilai TI bagi pemangku kepentingan sambil mengelola risiko",
-            },
-            { id: "B", text: "Menambah kompleksitas jaringan" },
-            { id: "C", text: "Mengurangi jumlah pengguna" },
-            { id: "D", text: "Menghapus sistem legacy" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "IT governance bertujuan menghasilkan nilai bisnis dari investasi TI dan mengatur risiko serta kepatuhan.",
-    },
-    {
-        id: "g005",
-        question:
-            "Dalam COBIT, domain yang fokus pada penyediaan layanan dan dukungan adalah ...",
-        choices: [
-            {
-                id: "A",
-                text: "DAS (Deliver, Service and Support) — Dapat muncul dengan kata Deliver/Serve",
-            },
-            { id: "B", text: "Evaluate, Direct and Monitor (EDM)" },
-            { id: "C", text: "Manage, Build and Acquire (MBA)" },
-            { id: "D", text: "Tidak ada domain" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "COBIT model lama/baru punya kelompok proses seperti Deliver, Service and Support (atau Align, Plan and Organize tergantung versi) yang menangani delivery layanan TI.",
-    },
-    {
-        id: "g006",
-        question: "Apa kepanjangan dari SLA dan fungsinya?",
-        choices: [
-            {
-                id: "A",
-                text: "Service Level Agreement — mendefinisikan tingkat layanan yang diharapkan antara provider dan pelanggan",
-            },
-            { id: "B", text: "System Level Access — memberikan akses admin" },
-            { id: "C", text: "Software License Agreement — hanya lisensi" },
-            { id: "D", text: "Security Level Audit — audit keamanan" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "SLA menetapkan metrik performa layanan (uptime, response time) dan konsekuensi jika tidak terpenuhi.",
-    },
-    {
-        id: "g007",
-        question: "Apa itu RACI matrix dan kegunaannya?",
-        choices: [
-            {
-                id: "A",
-                text: "Model tanggung jawab yang menentukan siapa Responsible, Accountable, Consulted, Informed untuk aktivitas",
-            },
-            { id: "B", text: "Metode enkripsi data" },
-            { id: "C", text: "Protokol jaringan" },
-            { id: "D", text: "Format backup file" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "RACI membantu kejelasan peran dan tanggung jawab dalam proses/proyek sehingga mengurangi kebingungan dan overlap.",
-    },
-    {
-        id: "g008",
-        question:
-            "Dalam manajemen risiko TI, langkah pertama yang benar adalah ...",
-        choices: [
-            {
-                id: "A",
-                text: "Identifikasi aset dan ancaman (risk identification)",
-            },
-            { id: "B", text: "Membeli software antivirus" },
-            { id: "C", text: "Mendeploy patch tanpa uji" },
-            { id: "D", text: "Menonaktifkan logging" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Proses risk management dimulai dari identifikasi aset, ancaman, dan kerentanan sebelum analisis risiko dan mitigasi.",
-    },
-    {
-        id: "g009",
-        question:
-            "Manakah pendekatan untuk menangani risiko yang paling tepat jika dampak besar tapi probabilitas kecil?",
-        choices: [
-            {
-                id: "A",
-                text: "Evaluasi cost-benefit dari kontrol; seringkali transfer (insurance) atau mitigasi",
-            },
-            { id: "B", text: "Abaikan saja" },
-            { id: "C", text: "Selalu menghapus semua sistem" },
-            { id: "D", text: "Meningkatkan probabilitas" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Risiko berdampak besar bisa dikurangi lewat kontrol atau dialihkan (insurance); keputusan berdasarkan analisis biaya-manfaat.",
-    },
-    {
-        id: "g010",
-        question: "Apa itu 'compliance' dalam konteks tata kelola TI?",
-        choices: [
-            {
-                id: "A",
-                text: "Kepatuhan terhadap peraturan, standar, dan kebijakan yang relevan",
-            },
-            { id: "B", text: "Implementasi UI/UX" },
-            { id: "C", text: "Hanya backup data" },
+            { id: "C", text: "Kegiatan teknis harian" },
             { id: "D", text: "Pengembangan aplikasi" },
         ],
-        answerId: "A",
-        points: 2,
-        time: 90,
+        answerId: "B",
         explanation:
-            "Compliance memastikan organisasi mematuhi regulasi (mis. data protection), standar ISO, serta kebijakan internal.",
+            "Tata kelola TI memastikan keselarasan TI dengan tujuan bisnis.",
+        points: 2,
     },
     {
-        id: "g011",
-        question: "ISO 27001 adalah standar untuk ...",
+        id: "t2",
+        question: "Tujuan utama tata kelola TI adalah …",
         choices: [
-            {
-                id: "A",
-                text: "Manajemen keamanan informasi (Information Security Management System - ISMS)",
-            },
-            { id: "B", text: "Quality management" },
-            { id: "C", text: "Project management" },
-            { id: "D", text: "UI design" },
+            { id: "A", text: "Mengurangi penggunaan TI" },
+            { id: "B", text: "Menciptakan nilai bisnis dari TI" },
+            { id: "C", text: "Menambah biaya operasional" },
+            { id: "D", text: "Menghilangkan risiko sepenuhnya" },
+        ],
+        answerId: "B",
+        explanation: "Governance TI berfokus pada penciptaan nilai bisnis.",
+        points: 2,
+    },
+    {
+        id: "t3",
+        question: "Perbedaan utama tata kelola TI dan manajemen TI adalah …",
+        choices: [
+            { id: "A", text: "Governance strategis, manajemen operasional" },
+            { id: "B", text: "Governance lebih teknis" },
+            { id: "C", text: "Manajemen tidak penting" },
+            { id: "D", text: "Keduanya sama" },
         ],
         answerId: "A",
+        explanation: "Governance menentukan arah, manajemen mengeksekusi.",
         points: 2,
-        time: 90,
-        explanation:
-            "ISO 27001 menetapkan persyaratan untuk membangun, menerapkan, memelihara, dan terus meningkatkan ISMS.",
     },
     {
-        id: "g012",
-        question: "Apa tujuan utama IT audit?",
+        id: "t4",
+        question: "Pihak yang bertanggung jawab atas tata kelola TI adalah …",
         choices: [
-            {
-                id: "A",
-                text: "Menilai efektivitas pengendalian TI, kepatuhan, dan integritas proses",
-            },
-            { id: "B", text: "Mengganti tim TI" },
-            { id: "C", text: "Mengembangkan aplikasi" },
-            { id: "D", text: "Hanya mengecek password" },
+            { id: "A", text: "Staf IT" },
+            { id: "B", text: "Manajemen puncak" },
+            { id: "C", text: "Programmer" },
+            { id: "D", text: "Operator sistem" },
+        ],
+        answerId: "B",
+        explanation: "Tata kelola TI adalah tanggung jawab manajemen puncak.",
+        points: 2,
+    },
+    {
+        id: "t5",
+        question: "Prinsip utama tata kelola TI adalah …",
+        choices: [
+            { id: "A", text: "Teknologi terbaru" },
+            { id: "B", text: "Keselarasan TI dan bisnis" },
+            { id: "C", text: "Biaya rendah" },
+            { id: "D", text: "Kecepatan sistem" },
+        ],
+        answerId: "B",
+        explanation: "Alignment TI–bisnis adalah inti governance.",
+        points: 2,
+    },
+    {
+        id: "t6",
+        question: "Tata kelola TI berfokus pada …",
+        choices: [
+            { id: "A", text: "Kontrol dan arah TI" },
+            { id: "B", text: "Pemrograman" },
+            { id: "C", text: "Maintenance server" },
+            { id: "D", text: "Troubleshooting" },
         ],
         answerId: "A",
+        explanation: "Governance mengatur arah dan kontrol TI.",
         points: 2,
-        time: 120,
-        explanation:
-            "IT audit mengevaluasi kontrol internal TI dan memberikan assurance kepada manajemen/pemangku kepentingan.",
     },
     {
-        id: "g013",
-        question:
-            "Dalam kerangka kerja COBIT, EDM singkatan dari ... dan fungsinya?",
+        id: "t7",
+        question: "Manajemen TI bertugas untuk …",
         choices: [
-            {
-                id: "A",
-                text: "Evaluate, Direct and Monitor — proses governance utama untuk mengarahkan organisasi",
-            },
-            { id: "B", text: "Encrypt Data Management" },
-            { id: "C", text: "Enterprise Data Model" },
-            { id: "D", text: "External Device Manager" },
+            { id: "A", text: "Menentukan strategi bisnis" },
+            { id: "B", text: "Menjalankan dan mengelola TI" },
+            { id: "C", text: "Menetapkan kebijakan nasional" },
+            { id: "D", text: "Audit eksternal" },
+        ],
+        answerId: "B",
+        explanation: "Manajemen TI mengeksekusi strategi.",
+        points: 2,
+    },
+    {
+        id: "t8",
+        question: "Tata kelola TI yang baik harus bersifat …",
+        choices: [
+            { id: "A", text: "Teknis saja" },
+            { id: "B", text: "Terstruktur dan terkontrol" },
+            { id: "C", text: "Tidak terdokumentasi" },
+            { id: "D", text: "Fleksibel tanpa aturan" },
+        ],
+        answerId: "B",
+        explanation: "Governance memerlukan struktur dan kontrol.",
+        points: 2,
+    },
+    {
+        id: "t9",
+        question: "Nilai bisnis dari TI disebut juga …",
+        choices: [
+            { id: "A", text: "Cost center" },
+            { id: "B", text: "Value creation" },
+            { id: "C", text: "Maintenance" },
+            { id: "D", text: "Overhead" },
+        ],
+        answerId: "B",
+        explanation: "TI harus menciptakan nilai bisnis.",
+        points: 2,
+    },
+    {
+        id: "t10",
+        question: "Tata kelola TI TIDAK bertujuan untuk …",
+        choices: [
+            { id: "A", text: "Mendukung tujuan organisasi" },
+            { id: "B", text: "Mengendalikan risiko" },
+            { id: "C", text: "Menghilangkan seluruh risiko" },
+            { id: "D", text: "Menciptakan nilai" },
+        ],
+        answerId: "C",
+        explanation: "Risiko tidak dihilangkan, tapi dikelola.",
+        points: 2,
+    },
+
+    /* ===== 11–20 : FRAMEWORK ===== */
+    {
+        id: "t11",
+        question: "COBIT merupakan framework untuk …",
+        choices: [
+            { id: "A", text: "Manajemen proyek" },
+            { id: "B", text: "Tata kelola dan manajemen TI" },
+            { id: "C", text: "Keamanan jaringan" },
+            { id: "D", text: "Pemrograman" },
+        ],
+        answerId: "B",
+        explanation: "COBIT fokus pada governance dan management TI.",
+        points: 2,
+    },
+    {
+        id: "t12",
+        question: "ITIL berfokus pada …",
+        choices: [
+            { id: "A", text: "Audit TI" },
+            { id: "B", text: "Manajemen layanan TI" },
+            { id: "C", text: "Keamanan informasi" },
+            { id: "D", text: "Strategi bisnis" },
+        ],
+        answerId: "B",
+        explanation: "ITIL adalah best practice ITSM.",
+        points: 2,
+    },
+    {
+        id: "t13",
+        question: "ISO/IEC 38500 mengatur tentang …",
+        choices: [
+            { id: "A", text: "Keamanan informasi" },
+            { id: "B", text: "Tata kelola TI organisasi" },
+            { id: "C", text: "Manajemen risiko" },
+            { id: "D", text: "Audit keuangan" },
+        ],
+        answerId: "B",
+        explanation: "ISO 38500 adalah standar governance TI.",
+        points: 2,
+    },
+    {
+        id: "t14",
+        question: "Framework yang kuat pada kontrol internal adalah …",
+        choices: [
+            { id: "A", text: "ITIL" },
+            { id: "B", text: "COBIT" },
+            { id: "C", text: "Scrum" },
+            { id: "D", text: "XP" },
+        ],
+        answerId: "B",
+        explanation: "COBIT menekankan kontrol dan audit.",
+        points: 2,
+    },
+    {
+        id: "t15",
+        question: "Tujuan penggunaan framework TI adalah …",
+        choices: [
+            { id: "A", text: "Menghilangkan risiko" },
+            { id: "B", text: "Memberi panduan best practice" },
+            { id: "C", text: "Menggantikan manajemen" },
+            { id: "D", text: "Menambah birokrasi" },
+        ],
+        answerId: "B",
+        explanation: "Framework memberi panduan terstruktur.",
+        points: 2,
+    },
+    {
+        id: "t16",
+        question: "COBIT membantu organisasi dalam …",
+        choices: [
+            { id: "A", text: "Pemrograman" },
+            { id: "B", text: "Pengambilan keputusan TI" },
+            { id: "C", text: "Desain UI" },
+            { id: "D", text: "Coding backend" },
+        ],
+        answerId: "B",
+        explanation: "COBIT membantu decision making TI.",
+        points: 2,
+    },
+    {
+        id: "t17",
+        question: "ITIL paling tepat digunakan pada …",
+        choices: [
+            { id: "A", text: "Pengembangan startup" },
+            { id: "B", text: "Manajemen layanan TI" },
+            { id: "C", text: "Audit keuangan" },
+            { id: "D", text: "AI research" },
+        ],
+        answerId: "B",
+        explanation: "ITIL fokus pada layanan TI.",
+        points: 2,
+    },
+    {
+        id: "t18",
+        question: "Framework tata kelola TI membantu organisasi agar …",
+        choices: [
+            { id: "A", text: "TI berjalan tanpa aturan" },
+            { id: "B", text: "TI selaras dengan bisnis" },
+            { id: "C", text: "TI terpisah dari bisnis" },
+            { id: "D", text: "TI bersifat eksperimental" },
+        ],
+        answerId: "B",
+        explanation: "Alignment adalah tujuan utama.",
+        points: 2,
+    },
+    {
+        id: "t19",
+        question: "Framework TIDAK digunakan untuk …",
+        choices: [
+            { id: "A", text: "Panduan pengelolaan TI" },
+            { id: "B", text: "Best practice" },
+            { id: "C", text: "Menghapus peran manajemen" },
+            { id: "D", text: "Kontrol TI" },
+        ],
+        answerId: "C",
+        explanation: "Framework tidak menggantikan manajemen.",
+        points: 2,
+    },
+    {
+        id: "t20",
+        question: "Framework tata kelola TI bersifat …",
+        choices: [
+            { id: "A", text: "Kaku dan mutlak" },
+            { id: "B", text: "Dapat disesuaikan dengan organisasi" },
+            { id: "C", text: "Hanya untuk perusahaan besar" },
+            { id: "D", text: "Teknis murni" },
+        ],
+        answerId: "B",
+        explanation: "Framework bersifat adaptable.",
+        points: 2,
+    },
+
+    /* ===== 21–30 : RISIKO & KONTROL ===== */
+    {
+        id: "t21",
+        question: "Risiko TI adalah …",
+        choices: [
+            { id: "A", text: "Kesalahan kecil" },
+            { id: "B", text: "Potensi kejadian merugikan organisasi" },
+            { id: "C", text: "Kerusakan hardware" },
+            { id: "D", text: "Bug software" },
+        ],
+        answerId: "B",
+        explanation: "Risiko berkaitan dengan ketidakpastian.",
+        points: 2,
+    },
+    {
+        id: "t22",
+        question: "Manajemen risiko TI bertujuan untuk …",
+        choices: [
+            { id: "A", text: "Menghilangkan risiko" },
+            { id: "B", text: "Mengidentifikasi dan mengendalikan risiko" },
+            { id: "C", text: "Mengabaikan risiko" },
+            { id: "D", text: "Menambah risiko" },
+        ],
+        answerId: "B",
+        explanation: "Risiko dikendalikan, bukan dihapus.",
+        points: 2,
+    },
+    {
+        id: "t23",
+        question: "Kontrol TI diperlukan untuk …",
+        choices: [
+            { id: "A", text: "Menambah kecepatan" },
+            { id: "B", text: "Menjamin keamanan dan keandalan" },
+            { id: "C", text: "Mengurangi SDM" },
+            { id: "D", text: "Menambah biaya" },
+        ],
+        answerId: "B",
+        explanation: "Kontrol menjaga sistem tetap andal.",
+        points: 2,
+    },
+    {
+        id: "t24",
+        question: "CIA Triad terdiri dari …",
+        choices: [
+            { id: "A", text: "Confidentiality, Integrity, Availability" },
+            { id: "B", text: "Control, IT, Audit" },
+            { id: "C", text: "Cost, Innovation, Agility" },
+            { id: "D", text: "Compliance, Integrity, Audit" },
         ],
         answerId: "A",
+        explanation: "CIA adalah dasar keamanan informasi.",
         points: 2,
-        time: 120,
-        explanation:
-            "EDM adalah domain governance di COBIT yang memfokuskan pada penilaian, pengarahan, dan pemantauan kinerja TI.",
     },
     {
-        id: "g014",
-        question:
-            "Manakah metrik yang biasa digunakan untuk mengukur kinerja layanan TI?",
+        id: "t25",
+        question: "Audit TI dilakukan untuk …",
         choices: [
-            {
-                id: "A",
-                text: "MTTR (Mean Time To Repair), MTBF, availability, SLA compliance",
-            },
-            { id: "B", text: "Lines of code only" },
-            { id: "C", text: "Jumlah developer" },
-            { id: "D", text: "Warna logo" },
+            { id: "A", text: "Coding" },
+            { id: "B", text: "Menilai efektivitas kontrol TI" },
+            { id: "C", text: "Upgrade server" },
+            { id: "D", text: "Menambah lisensi" },
+        ],
+        answerId: "B",
+        explanation: "Audit menilai kepatuhan dan efektivitas.",
+        points: 2,
+    },
+
+    /* ===== 31–40 : STRATEGI & KINERJA ===== */
+    {
+        id: "t26",
+        question: "Value delivery berarti …",
+        choices: [
+            { id: "A", text: "TI sebagai biaya" },
+            { id: "B", text: "TI memberikan manfaat bisnis" },
+            { id: "C", text: "TI bersifat teknis" },
+            { id: "D", text: "TI tidak penting" },
+        ],
+        answerId: "B",
+        explanation: "TI harus memberi nilai bisnis.",
+        points: 2,
+    },
+    {
+        id: "t27",
+        question: "KPI digunakan untuk …",
+        choices: [
+            { id: "A", text: "Menentukan gaji" },
+            { id: "B", text: "Mengukur kinerja TI" },
+            { id: "C", text: "Menghapus proses" },
+            { id: "D", text: "Menambah risiko" },
+        ],
+        answerId: "B",
+        explanation: "KPI mengukur performa.",
+        points: 2,
+    },
+    {
+        id: "t28",
+        question: "Keselarasan TI dan bisnis berarti …",
+        choices: [
+            { id: "A", text: "TI berjalan sendiri" },
+            { id: "B", text: "TI mendukung tujuan bisnis" },
+            { id: "C", text: "Bisnis mengikuti TI" },
+            { id: "D", text: "TI tidak dibutuhkan" },
+        ],
+        answerId: "B",
+        explanation: "Alignment adalah inti governance.",
+        points: 2,
+    },
+    {
+        id: "t29",
+        question: "Portofolio TI digunakan untuk …",
+        choices: [
+            { id: "A", text: "Menghapus proyek" },
+            { id: "B", text: "Mengelola investasi TI" },
+            { id: "C", text: "Menambah risiko" },
+            { id: "D", text: "Mengganti vendor" },
+        ],
+        answerId: "B",
+        explanation: "Portofolio membantu prioritas investasi.",
+        points: 2,
+    },
+    {
+        id: "t30",
+        question: "Balanced Scorecard digunakan untuk …",
+        choices: [
+            { id: "A", text: "Audit keuangan" },
+            { id: "B", text: "Mengukur kinerja dari berbagai perspektif" },
+            { id: "C", text: "Manajemen proyek" },
+            { id: "D", text: "Keamanan jaringan" },
+        ],
+        answerId: "B",
+        explanation: "BSC memberi pandangan menyeluruh.",
+        points: 2,
+    },
+
+    /* ===== 41–50 : ETIKA & KESIMPULAN ===== */
+    {
+        id: "t31",
+        question: "Etika TI berkaitan dengan …",
+        choices: [
+            { id: "A", text: "Kecepatan sistem" },
+            { id: "B", text: "Tanggung jawab dan kepatuhan" },
+            { id: "C", text: "Teknologi baru" },
+            { id: "D", text: "Jumlah server" },
+        ],
+        answerId: "B",
+        explanation: "Etika menjaga kepercayaan.",
+        points: 2,
+    },
+    {
+        id: "t32",
+        question: "Compliance berarti …",
+        choices: [
+            { id: "A", text: "Mengabaikan aturan" },
+            { id: "B", text: "Mematuhi regulasi dan kebijakan" },
+            { id: "C", text: "Mengurangi kontrol" },
+            { id: "D", text: "Fokus teknis" },
+        ],
+        answerId: "B",
+        explanation: "Compliance adalah bagian governance.",
+        points: 2,
+    },
+    {
+        id: "t33",
+        question: "Peran SDM dalam tata kelola TI adalah …",
+        choices: [
+            { id: "A", text: "Tidak penting" },
+            { id: "B", text: "Menjalankan TI secara kompeten" },
+            { id: "C", text: "Hanya teknis" },
+            { id: "D", text: "Menggantikan manajemen" },
+        ],
+        answerId: "B",
+        explanation: "SDM adalah faktor kunci.",
+        points: 2,
+    },
+    {
+        id: "t34",
+        question: "Continuous improvement berarti …",
+        choices: [
+            { id: "A", text: "Perubahan sekali" },
+            { id: "B", text: "Perbaikan berkelanjutan" },
+            { id: "C", text: "Menghentikan layanan" },
+            { id: "D", text: "Mengganti sistem total" },
+        ],
+        answerId: "B",
+        explanation: "Perbaikan terus-menerus.",
+        points: 2,
+    },
+    {
+        id: "t35",
+        question: "Good IT Governance akan menghasilkan …",
+        choices: [
+            { id: "A", text: "Biaya tinggi" },
+            { id: "B", text: "TI bernilai bagi bisnis" },
+            { id: "C", text: "Risiko nol" },
+            { id: "D", text: "TI teknis saja" },
+        ],
+        answerId: "B",
+        explanation: "Governance yang baik menciptakan nilai.",
+        points: 2,
+    },
+    {
+        id: "t36",
+        question: "Pengambilan keputusan TI seharusnya …",
+        choices: [
+            { id: "A", text: "Berdasarkan intuisi" },
+            { id: "B", text: "Berbasis data dan kebijakan" },
+            { id: "C", text: "Tanpa dokumentasi" },
+            { id: "D", text: "Sepihak" },
+        ],
+        answerId: "B",
+        explanation: "Keputusan harus terkontrol.",
+        points: 2,
+    },
+    {
+        id: "t37",
+        question: "Tata kelola TI membantu organisasi dalam …",
+        choices: [
+            { id: "A", text: "Pemrograman" },
+            { id: "B", text: "Pengendalian risiko" },
+            { id: "C", text: "Desain UI" },
+            { id: "D", text: "Debugging" },
+        ],
+        answerId: "B",
+        explanation: "Risk control adalah fungsi governance.",
+        points: 2,
+    },
+    {
+        id: "t38",
+        question: "TI sebagai enabler bisnis berarti …",
+        choices: [
+            { id: "A", text: "TI sebagai beban" },
+            { id: "B", text: "TI mendukung pencapaian tujuan bisnis" },
+            { id: "C", text: "TI berdiri sendiri" },
+            { id: "D", text: "TI hanya operasional" },
+        ],
+        answerId: "B",
+        explanation: "TI berperan sebagai pendukung strategi.",
+        points: 2,
+    },
+    {
+        id: "t39",
+        question: "Good governance membutuhkan …",
+        choices: [
+            { id: "A", text: "Dokumentasi dan kontrol" },
+            { id: "B", text: "Teknologi terbaru" },
+            { id: "C", text: "Server mahal" },
+            { id: "D", text: "Banyak programmer" },
         ],
         answerId: "A",
+        explanation: "Kontrol dan dokumentasi penting.",
         points: 2,
-        time: 90,
-        explanation:
-            "MTTR, MTBF, dan metrik availability/SLA memberikan gambaran kualitas layanan dan keandalan sistem.",
     },
     {
-        id: "g015",
-        question:
-            "Apa yang dimaksud dengan 'segregation of duties' (SoD) dalam governance?",
+        id: "t40",
+        question: "Kesimpulan utama tata kelola TI adalah …",
         choices: [
-            {
-                id: "A",
-                text: "Prinsip membagi tugas agar tidak ada satu orang yang memegang kontrol penuh sehingga mengurangi fraud",
-            },
-            { id: "B", text: "Menyerahkan semua tugas ke satu orang" },
-            { id: "C", text: "Menggabungkan semua peran TI" },
-            { id: "D", text: "Hanya terkait hardware" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "SoD memisahkan tugas (mis. development vs deployment) untuk mencegah konflik kepentingan dan penyalahgunaan.",
-    },
-    {
-        id: "g016",
-        question:
-            "Dalam manajemen perubahan (change management), langkah penting sebelum produksi adalah ...",
-        choices: [
-            {
-                id: "A",
-                text: "Uji coba (testing) dan assessment dampak serta approval change advisory board (CAB)",
-            },
-            { id: "B", text: "Langsung deploy di live tanpa testing" },
-            { id: "C", text: "Hanya memberi tahu tim support" },
-            { id: "D", text: "Menghapus log" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Perubahan harus diuji, di-review, dan disetujui untuk meminimalkan gangguan layanan dan risiko.",
-    },
-    {
-        id: "g017",
-        question: "Apa itu 'business continuity plan' (BCP)?",
-        choices: [
-            {
-                id: "A",
-                text: "Rencana untuk memastikan keberlangsungan operasi bisnis saat terjadi gangguan (disaster recovery termasuk)",
-            },
-            { id: "B", text: "Rencana pemasaran" },
-            { id: "C", text: "SOP pengembangan fitur" },
-            { id: "D", text: "Dokumen teknis API" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "BCP berisi strategi, proses, dan prosedur agar organisasi tetap beroperasi saat gangguan besar.",
-    },
-    {
-        id: "g018",
-        question:
-            "Manakah kontrol teknis yang membantu melindungi data sensitif?",
-        choices: [
-            {
-                id: "A",
-                text: "Enkripsi data at-rest dan in-transit, akses berbasis peran, logging",
-            },
-            { id: "B", text: "Meningkatkan warna UI" },
-            { id: "C", text: "Memperbesar ukuran server" },
-            { id: "D", text: "Menghapus backup" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Enkripsi, kontrol akses, dan audit logging termasuk kontrol penting untuk keamanan data.",
-    },
-    {
-        id: "g019",
-        question:
-            "Apa peran Chief Information Officer (CIO) dalam tata kelola TI?",
-        choices: [
-            {
-                id: "A",
-                text: "Mengawasi strategi TI dan memastikan alignment dengan tujuan bisnis",
-            },
-            { id: "B", text: "Menulis semua kode" },
-            { id: "C", text: "Hanya bertanggung jawab hardware" },
-            { id: "D", text: "Hanya menangani helpdesk" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "CIO bertanggung jawab atas strategi TI, investasi, dan hubungan antara TI dan unit bisnis.",
-    },
-    {
-        id: "g020",
-        question: "Apa pentingnya data governance dalam organisasi?",
-        choices: [
-            {
-                id: "A",
-                text: "Menetapkan kebijakan data, kualitas, kepemilikan, dan penggunaan yang bertanggung jawab",
-            },
-            { id: "B", text: "Menghapus data lama tanpa pencatatan" },
-            { id: "C", text: "Hanya mem-backup data" },
-            { id: "D", text: "Membiarkan siapa saja akses" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Data governance menetapkan aturan untuk kualitas, integritas, keamanan, dan tata kelola penggunaan data.",
-    },
-    {
-        id: "g021",
-        question: "Manakah yang merupakan contoh kontrol administratif?",
-        choices: [
-            {
-                id: "A",
-                text: "Kebijakan & prosedur, pelatihan karyawan, vendor management",
-            },
-            { id: "B", text: "Firewall" },
-            { id: "C", text: "Enkripsi AES" },
-            { id: "D", text: "Load balancer" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Kontrol administratif meliputi kebijakan, governance, dan aktivitas organisasi (non-teknis) untuk mengelola risiko.",
-    },
-    {
-        id: "g022",
-        question:
-            "Ketika menilai vendor cloud, metrik yang penting untuk diperiksa adalah ...",
-        choices: [
-            {
-                id: "A",
-                text: "Compliance certifications, SLA uptime, security practices, data residency",
-            },
-            { id: "B", text: "Warna logo vendor" },
-            { id: "C", text: "Jumlah font pada website vendor" },
-            { id: "D", text: "Alamat kantor pusat saja" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Sertifikasi (ISO, SOC), SLA, metode enkripsi, dan lokasi data adalah faktor penting dalam vendor assessment.",
-    },
-    {
-        id: "g023",
-        question:
-            "Apa fungsi Key Performance Indicators (KPI) dalam governance TI?",
-        choices: [
-            {
-                id: "A",
-                text: "Mengukur kinerja layanan/aktivitas TI terhadap target yang ditetapkan",
-            },
-            { id: "B", text: "Mengganti kebijakan" },
-            { id: "C", text: "Mendeteksi bug" },
-            { id: "D", text: "Menambah jumlah pengguna" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "KPI membantu menilai efektivitas, efisiensi, dan kontribusi TI terhadap tujuan organisasi.",
-    },
-    {
-        id: "g024",
-        question:
-            "Dalam konteks risiko TI, 'threat' berbeda dari 'vulnerability' karena ...",
-        choices: [
-            {
-                id: "A",
-                text: "Threat adalah potensi kejadian berbahaya; vulnerability adalah kelemahan yang dapat dieksploitasi",
-            },
-            { id: "B", text: "Keduanya sama" },
-            { id: "C", text: "Vulnerability adalah serangan nyata" },
-            { id: "D", text: "Threat hanya perangkat keras" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Threat (ancaman) bisa mengeksploitasi vulnerability (celah/kelemahan) untuk menyebabkan dampak.",
-    },
-    {
-        id: "g025",
-        question: "Apa tujuan utama pengelolaan aset TI (IT asset management)?",
-        choices: [
-            {
-                id: "A",
-                text: "Mengetahui inventaris, umur, kepemilikan, dan siklus hidup aset untuk pengelolaan dan pengendalian",
-            },
-            { id: "B", text: "Hanya menghapus aset lama" },
-            { id: "C", text: "Menambah aset tanpa catatan" },
-            { id: "D", text: "Menyimpan aset di gudang tanpa monitoring" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Aset management membantu kontrol biaya, compliance, dan pengambilan keputusan terkait pembelian/retirement.",
-    },
-    {
-        id: "g026",
-        question: "Manakah aktivitas yang termasuk incident management?",
-        choices: [
-            {
-                id: "A",
-                text: "Identifikasi insiden, eskalasi, mitigasi, pemulihan, dan post-mortem",
-            },
-            { id: "B", text: "Hanya backup data" },
-            { id: "C", text: "Mendesain UI" },
-            { id: "D", text: "Meningkatkan bandwidth" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Incident management bertujuan mengembalikan layanan normal secepat mungkin dan meminimalkan dampak bisnis.",
-    },
-    {
-        id: "g027",
-        question: "Dalam konteks tata kelola, apa itu 'policy'?",
-        choices: [
-            {
-                id: "A",
-                text: "Dokumen formal yang menetapkan aturan, tanggung jawab, dan harapan perilaku",
-            },
-            { id: "B", text: "Script otomatis" },
-            { id: "C", text: "Format file backup" },
-            { id: "D", text: "Tool monitoring" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Policy memberikan panduan dan aturan yang wajib dipatuhi oleh organisasi dan karyawan.",
-    },
-    {
-        id: "g028",
-        question: "Apa yang dimaksud dengan 'risk appetite'?",
-        choices: [
-            {
-                id: "A",
-                text: "Tingkat risiko yang dapat diterima organisasi dalam mengejar tujuan bisnis",
-            },
-            { id: "B", text: "Jumlah risiko yang pasti terjadi" },
-            { id: "C", text: "Tingkat keamanan tertinggi" },
-            { id: "D", text: "Budget untuk TI" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Risk appetite adalah toleransi organisasi terhadap risiko dan menjadi dasar keputusan mitigasi/investasi kontrol.",
-    },
-    {
-        id: "g029",
-        question:
-            "Manakah praktik terbaik dalam pengelolaan akses (access management)?",
-        choices: [
-            {
-                id: "A",
-                text: "Prinsip least privilege, review hak akses berkala, dan logging akses",
-            },
-            { id: "B", text: "Memberi semua akses ke semua pengguna" },
-            { id: "C", text: "Menyimpan password di dokumen bersama" },
-            { id: "D", text: "Tidak perlu revokasi akses saat pegawai keluar" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Least privilege, periodic access review, dan audit trail mengurangi risiko penyalahgunaan akses.",
-    },
-    {
-        id: "g030",
-        question: "Apa tujuan vendor management dalam tata kelola TI?",
-        choices: [
-            {
-                id: "A",
-                text: "Mengelola hubungan, kontrak, kinerja, dan risiko vendor untuk memastikan layanan yang konsisten",
-            },
-            { id: "B", text: "Hanya menandatangani kontrak" },
-            { id: "C", text: "Menjadwalkan cuti vendor" },
-            { id: "D", text: "Menyimpan vendor tanpa review" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Vendor management memastikan kepatuhan, SLA, dan mitigasi risiko terkait pihak ketiga.",
-    },
-    {
-        id: "g031",
-        question: "Apa itu 'change advisory board' (CAB)?",
-        choices: [
-            {
-                id: "A",
-                text: "Kelompok orang yang menilai dan menyetujui perubahan besar agar terkontrol",
-            },
-            { id: "B", text: "Tim backup" },
-            { id: "C", text: "Unit pemasaran" },
-            { id: "D", text: "Layanan cloud" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "CAB merepresentasikan pemangku kepentingan untuk menilai risiko dan dampak perubahan sebelum disetujui.",
-    },
-    {
-        id: "g032",
-        question: "Dalam audit TI, bukti yang paling kuat berasal dari ...",
-        choices: [
-            {
-                id: "A",
-                text: "Dokumen, log, konfigurasi sistem, dan hasil pengujian (evidence objective)",
-            },
-            { id: "B", text: "Wawancara saja" },
-            { id: "C", text: "Opini sepihak tanpa bukti" },
-            { id: "D", text: "Screenshot tanpa context" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Bukti objektif yang dapat diverifikasi seperti log & konfigurasi lebih andal daripada hanya pernyataan lisan.",
-    },
-    {
-        id: "g033",
-        question: "Apa peran 'data classification' dalam keamanan informasi?",
-        choices: [
-            {
-                id: "A",
-                text: "Mengelompokkan data berdasarkan sensitivitas untuk menentukan kontrol yang tepat",
-            },
-            { id: "B", text: "Menghapus data secara acak" },
-            { id: "C", text: "Mengganti format file" },
-            { id: "D", text: "Membuat lebih banyak salinan" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Classification menentukan bagaimana data dilindungi, disimpan, dan diakses sesuai level sensitivitas.",
-    },
-    {
-        id: "g034",
-        question:
-            "Manakah aktivitas yang termasuk dalam 'performance monitoring' TI?",
-        choices: [
-            {
-                id: "A",
-                text: "Pemantauan uptime, latency, penggunaan sumber daya, serta analisa tren",
-            },
-            { id: "B", text: "Hanya melihat dashboard sekali setahun" },
-            { id: "C", text: "Menonaktifkan monitoring saat malam" },
-            { id: "D", text: "Menghapus log setelah satu hari" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Monitoring berkelanjutan membantu deteksi dini masalah dan perencanaan kapasitas.",
-    },
-    {
-        id: "g035",
-        question:
-            "Dalam konteks regulasi perlindungan data, praktik penting yang harus diperhatikan organisasi adalah ...",
-        choices: [
-            {
-                id: "A",
-                text: "Prinsip minimisasi data, persetujuan, hak subjek data, dan keamanan data",
-            },
+            { id: "A", text: "TI hanya biaya" },
             {
                 id: "B",
-                text: "Mengumpulkan data sebanyak mungkin tanpa alasan",
+                text: "TI harus dikelola untuk menciptakan nilai bisnis",
             },
-            { id: "C", text: "Membagikan data publik tanpa kontrol" },
-            { id: "D", text: "Menyimpan password dalam teks jelas" },
+            { id: "C", text: "TI urusan teknis" },
+            { id: "D", text: "TI tanpa risiko" },
         ],
-        answerId: "A",
+        answerId: "B",
+        explanation: "Ini inti STSI4402.",
         points: 2,
-        time: 120,
-        explanation:
-            "Prinsip privasi seperti minimisasi dan hak akses penting untuk kepatuhan terhadap aturan proteksi data.",
     },
     {
-        id: "g036",
-        question: "Apa tujuan melakukan business impact analysis (BIA)?",
+        id: "t41",
+        question: "Tata kelola TI yang buruk dapat menyebabkan …",
         choices: [
+            { id: "A", text: "Efisiensi tinggi" },
+            { id: "B", text: "Kerugian bisnis" },
+            { id: "C", text: "Nilai tambah" },
+            { id: "D", text: "Kepatuhan tinggi" },
+        ],
+        answerId: "B",
+        explanation: "Governance buruk berdampak negatif.",
+        points: 2,
+    },
+    {
+        id: "t42",
+        question: "Kontrol preventif bertujuan untuk …",
+        choices: [
+            { id: "A", text: "Mendeteksi kesalahan" },
+            { id: "B", text: "Mencegah terjadinya kesalahan" },
+            { id: "C", text: "Memperbaiki kesalahan" },
+            { id: "D", text: "Mengabaikan risiko" },
+        ],
+        answerId: "B",
+        explanation: "Preventif mencegah kejadian.",
+        points: 2,
+    },
+    {
+        id: "t43",
+        question: "Kontrol detektif bertujuan untuk …",
+        choices: [
+            { id: "A", text: "Mencegah kesalahan" },
+            { id: "B", text: "Mendeteksi kesalahan" },
+            { id: "C", text: "Menghilangkan risiko" },
+            { id: "D", text: "Mengganti sistem" },
+        ],
+        answerId: "B",
+        explanation: "Detektif menemukan kejadian.",
+        points: 2,
+    },
+    {
+        id: "t44",
+        question: "Kontrol korektif bertujuan untuk …",
+        choices: [
+            { id: "A", text: "Memperbaiki kesalahan" },
+            { id: "B", text: "Mencegah risiko" },
+            { id: "C", text: "Mendeteksi pelanggaran" },
+            { id: "D", text: "Audit" },
+        ],
+        answerId: "A",
+        explanation: "Korektif memperbaiki dampak.",
+        points: 2,
+    },
+    {
+        id: "t45",
+        question: "Governance TI yang baik harus …",
+        choices: [
+            { id: "A", text: "Terpisah dari bisnis" },
+            { id: "B", text: "Selaras dengan strategi bisnis" },
+            { id: "C", text: "Fokus teknis" },
+            { id: "D", text: "Tidak terdokumentasi" },
+        ],
+        answerId: "B",
+        explanation: "Alignment adalah kunci.",
+        points: 2,
+    },
+    {
+        id: "t46",
+        question: "Pengukuran kinerja TI penting untuk …",
+        choices: [
+            { id: "A", text: "Formalitas" },
+            { id: "B", text: "Evaluasi dan perbaikan" },
+            { id: "C", text: "Menghentikan layanan" },
+            { id: "D", text: "Menambah risiko" },
+        ],
+        answerId: "B",
+        explanation: "Tanpa ukur, tidak bisa diperbaiki.",
+        points: 2,
+    },
+    {
+        id: "t47",
+        question: "Good IT Governance mendukung …",
+        choices: [
+            { id: "A", text: "Keputusan acak" },
+            { id: "B", text: "Pengambilan keputusan yang tepat" },
+            { id: "C", text: "Risiko tinggi" },
+            { id: "D", text: "TI tanpa arah" },
+        ],
+        answerId: "B",
+        explanation: "Governance mendukung keputusan tepat.",
+        points: 2,
+    },
+    {
+        id: "t48",
+        question: "Dokumentasi dalam tata kelola TI berfungsi untuk …",
+        choices: [
+            { id: "A", text: "Administrasi saja" },
+            { id: "B", text: "Transparansi dan akuntabilitas" },
+            { id: "C", text: "Menghambat kerja" },
+            { id: "D", text: "Formalitas" },
+        ],
+        answerId: "B",
+        explanation: "Dokumentasi penting untuk accountability.",
+        points: 2,
+    },
+    {
+        id: "t49",
+        question: "Evaluasi tata kelola TI dilakukan untuk …",
+        choices: [
+            { id: "A", text: "Mencari kesalahan personal" },
+            { id: "B", text: "Perbaikan berkelanjutan" },
+            { id: "C", text: "Menghentikan TI" },
+            { id: "D", text: "Audit keuangan" },
+        ],
+        answerId: "B",
+        explanation: "Evaluasi mendukung continuous improvement.",
+        points: 2,
+    },
+    {
+        id: "t50",
+        question: "Kesimpulan PALING TEPAT tentang tata kelola TI adalah …",
+        choices: [
+            { id: "A", text: "TI adalah beban biaya" },
             {
-                id: "A",
-                text: "Menilai dampak bisnis jika terjadi gangguan untuk menentukan prioritas pemulihan",
+                id: "B",
+                text: "TI harus dikelola agar memberi nilai dan terkendali",
             },
-            { id: "B", text: "Mengukur kecepatan internet" },
-            { id: "C", text: "Menentukan UI aplikasi" },
-            { id: "D", text: "Menambah jumlah server" },
+            { id: "C", text: "TI hanya teknis" },
+            { id: "D", text: "TI tanpa risiko" },
         ],
-        answerId: "A",
+        answerId: "B",
+        explanation: "Ini rangkuman seluruh materi STSI4402.",
         points: 2,
-        time: 120,
-        explanation:
-            "BIA membantu memahami konsekuensi operasional dan finansial dari gangguan sehingga BCP/DR dapat diprioritaskan.",
-    },
-    {
-        id: "g037",
-        question:
-            "Manakah tindakan mitigasi bila ditemukan celah keamanan kritis di sistem produksi?",
-        choices: [
-            {
-                id: "A",
-                text: "Segera lakukan isolasi/mitigasi sementara, patch, testing, dan rencana rollback/komunikasi",
-            },
-            { id: "B", text: "Mencatat dan menunggu sampai akhir bulan" },
-            { id: "C", text: "Menghapus log audit" },
-            { id: "D", text: "Menonaktifkan monitoring" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Respons cepat termasuk mitigasi sementara, patch teruji, dan komunikasi penting untuk mengurangi eksposur.",
-    },
-    {
-        id: "g038",
-        question:
-            "Apa itu 'continuous monitoring' dan mengapa penting dalam governance TI?",
-        choices: [
-            {
-                id: "A",
-                text: "Pemantauan berkelanjutan atas kontrol, performa, dan risiko untuk deteksi dini dan kepatuhan",
-            },
-            { id: "B", text: "Monitoring sekali setahun" },
-            { id: "C", text: "Hanya memonitor server database" },
-            { id: "D", text: "Mentukan laporan manual tanpa automation" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Continuous monitoring meningkatkan visibilitas, memungkinkan respons cepat terhadap masalah dan memastikan control tetap efektif.",
-    },
-    {
-        id: "g039",
-        question:
-            "Dalam procurement dan kontrak TI, klausul penting untuk dimasukkan adalah ...",
-        choices: [
-            {
-                id: "A",
-                text: "SLA, confidentiality, data handling, exit strategy, liability",
-            },
-            { id: "B", text: "Hanya harga tanpa layanan" },
-            { id: "C", text: "Format warna antarmuka" },
-            { id: "D", text: "Alamat email pembuat kontrak saja" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Kontrak harus mengatur layanan, keamanan, privasi, hak akses, dan proses pemutusan hubungan/transfer data.",
-    },
-    {
-        id: "g040",
-        question: "Apa arti 'least privilege' dan contohnya?",
-        choices: [
-            {
-                id: "A",
-                text: "Memberi akses minimal yang diperlukan — mis. user biasa tidak diberi akses admin",
-            },
-            { id: "B", text: "Memberi semua hak akses pada semua user" },
-            { id: "C", text: "Menghapus hak akses sama sekali" },
-            { id: "D", text: "Memberi akses berdasarkan lama kerja" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Least privilege membatasi akses sehingga mengurangi potensi penyalahgunaan dan dampak jika akun terkompromi.",
-    },
-    {
-        id: "g041",
-        question: "Manakah peran penting dari 'security policy' organisasi?",
-        choices: [
-            {
-                id: "A",
-                text: "Menetapkan aturan, tanggung jawab, dan prosedur untuk melindungi aset informasi",
-            },
-            { id: "B", text: "Menentukan desain logo" },
-            { id: "C", text: "Hanya untuk tim keamanan jaringan" },
-            { id: "D", text: "Mengganti SOP HR" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Security policy menjadi pedoman untuk implementasi kontrol, pelatihan, dan audit keamanan informasi.",
-    },
-    {
-        id: "g042",
-        question: "Apa itu 'segmentation' dalam konteks keamanan jaringan?",
-        choices: [
-            {
-                id: "A",
-                text: "Memisahkan jaringan menjadi zona untuk membatasi pergerakan lateral penyerang",
-            },
-            { id: "B", text: "Menghapus subnet" },
-            { id: "C", text: "Menaikkan bandwidth" },
-            { id: "D", text: "Menyalakan semua port" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Network segmentation mengurangi risiko penyebaran serangan dan mempermudah kontrol akses jaringan.",
-    },
-    {
-        id: "g043",
-        question: "Dalam konteks tata kelola, apa itu 'tone at the top'?",
-        choices: [
-            {
-                id: "A",
-                text: "Komitmen dan contoh perilaku pimpinan yang menentukan budaya governance dan kepatuhan",
-            },
-            { id: "B", text: "Nada suara tim helpdesk" },
-            { id: "C", text: "Format dokumen" },
-            { id: "D", text: "Warna tema aplikasi" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Pemimpin organisasi menetapkan prioritas governance dan etika, memengaruhi implementasi kebijakan di seluruh organisasi.",
-    },
-    {
-        id: "g044",
-        question:
-            "Manakah indikator yang menunjukkan perlunya peningkatan kontrol TI?",
-        choices: [
-            {
-                id: "A",
-                text: "Serangkaian insiden berulang, audit finding, dan ketidakpatuhan pada SLA",
-            },
-            { id: "B", text: "Tingkat kepuasan pengguna tinggi" },
-            { id: "C", text: "Jumlah server meningkat" },
-            { id: "D", text: "Dokumen kebijakan lengkap" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Insiden berulang atau temuan audit menunjukkan kelemahan kontrol yang harus diperbaiki.",
-    },
-    {
-        id: "g045",
-        question: "Apa itu 'third-party risk' dan bagaimana mengelolanya?",
-        choices: [
-            {
-                id: "A",
-                text: "Risiko yang timbul dari vendor/mitra; dikelola lewat due diligence, contract controls, dan monitoring",
-            },
-            { id: "B", text: "Risiko internal tim TI" },
-            { id: "C", text: "Risiko terkait hardware only" },
-            { id: "D", text: "Risiko yang selalu kecil" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Third-party risk assessment dan pemantauan membantu mengurangi eksposur dari pihak ketiga.",
-    },
-    {
-        id: "g046",
-        question:
-            "Dalam reporting governance, siapa yang biasanya menerima laporan kinerja & risiko TI secara rutin?",
-        choices: [
-            { id: "A", text: "Dewan direksi (Board) dan manajemen puncak" },
-            { id: "B", text: "Hanya tim helpdesk" },
-            { id: "C", text: "Semua pemegang saham publik tanpa filter" },
-            { id: "D", text: "Pihak eksternal tanpa NDA" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Board dan eksekutif perlu informasi untuk pengambilan keputusan strategis dan oversight.",
-    },
-    {
-        id: "g047",
-        question: "Apa peran 'control owner' dalam kerangka governance?",
-        choices: [
-            {
-                id: "A",
-                text: "Bertanggung jawab memastikan kontrol diterapkan dan berfungsi efektif",
-            },
-            { id: "B", text: "Hanya menandatangani dokumen" },
-            { id: "C", text: "Menulis kode aplikasi" },
-            { id: "D", text: "Menjadi auditor internal" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Control owner memelihara kontrol, melakukan self-assessment, dan memastikan evidence tersedia untuk audit.",
-    },
-    {
-        id: "g048",
-        question: "Manakah konsep yang membantu menjaga 'data integrity'?",
-        choices: [
-            {
-                id: "A",
-                text: "Checksums, hashing, access control, logging, validation",
-            },
-            { id: "B", text: "Menghapus semua index database" },
-            { id: "C", text: "Menonaktifkan backup" },
-            { id: "D", text: "Memberi akses penuh ke publik" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Integrity dipertahankan dengan mekanisme validasi, kontrol akses, dan audit trail yang kuat.",
-    },
-    {
-        id: "g049",
-        question:
-            "Dalam pengelolaan proyek TI, apa manfaat penggunaan metodologi formal (mis. PRINCE2, PMBOK)?",
-        choices: [
-            {
-                id: "A",
-                text: "Memberi struktur, kontrol risiko proyek, dan tata kelola proyek yang terdokumentasi",
-            },
-            { id: "B", text: "Menghilangkan kebutuhan testing" },
-            { id: "C", text: "Menambah biaya tanpa manfaat" },
-            { id: "D", text: "Hanya berguna untuk proyek kecil" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Metodologi formal membantu manajemen scope, schedule, risiko, dan komunikasi pemangku kepentingan.",
-    },
-    {
-        id: "g050",
-        question:
-            "Apa langkah terakhir yang ideal setelah implementasi sebuah kontrol baru?",
-        choices: [
-            {
-                id: "A",
-                text: "Monitoring efektivitas, review, dan dokumentasi hasil serta continuous improvement",
-            },
-            { id: "B", text: "Menonaktifkan kontrol lama tanpa review" },
-            { id: "C", text: "Menghapus bukti implementasi" },
-            { id: "D", text: "Langsung ganti vendor" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Implementasi harus diikuti pengukuran dan review untuk memastikan kontrol efektif dan disesuaikan bila perlu.",
     },
 ];
 

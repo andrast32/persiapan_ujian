@@ -3,900 +3,713 @@
 // 50 soal x 2 poin = total 100 poin
 window.QUESTION_BANK = [
     {
-        id: "p001",
-        question:
-            "Siapakah yang dikenal sebagai perumus Pancasila dalam sidang BPUPKI yang pertama?",
+        id: "p1",
+        question: "Pancasila sebagai dasar negara berarti …",
         choices: [
-            { id: "A", text: "Mohammad Hatta" },
-            { id: "B", text: "Ir. Soekarno" },
-            { id: "C", text: "KH. Ahmad Dahlan" },
-            { id: "D", text: "Sutan Sjahrir" },
+            { id: "A", text: "Pedoman moral pribadi" },
+            { id: "B", text: "Landasan penyelenggaraan negara" },
+            { id: "C", text: "Sumber ekonomi" },
+            { id: "D", text: "Alat politik" },
         ],
         answerId: "B",
+        explanation: "Pancasila menjadi dasar penyelenggaraan negara.",
         points: 2,
-        time: 120,
-        explanation:
-            "Ir. Soekarno memaparkan gagasan dasar negara yang kemudian dikenal sebagai Pancasila pada pidato 1 Juni 1945 di sidang BPUPKI.",
     },
+
     {
-        id: "p002",
-        question:
-            "Tanggal bersejarah yang diperingati sebagai hari lahir Pancasila adalah ...",
+        id: "p2",
+        question: "Pancasila disahkan sebagai dasar negara pada …",
         choices: [
-            { id: "A", text: "17 Agustus 1945" },
-            { id: "B", text: "1 Juni 1945" },
+            { id: "A", text: "1 Juni 1945" },
+            { id: "B", text: "17 Agustus 1945" },
             { id: "C", text: "18 Agustus 1945" },
-            { id: "D", text: "20 Mei 1908" },
-        ],
-        answerId: "B",
-        points: 2,
-        time: 90,
-        explanation:
-            "Tanggal 1 Juni 1945 adalah saat Bung Karno menyampaikan pidato yang memuat dasar-dasar negara yang kemudian disebut Pancasila.",
-    },
-    {
-        id: "p003",
-        question:
-            "Kata 'Pancasila' berasal dari bahasa Sansekerta. Makna harfiahnya adalah ...",
-        choices: [
-            { id: "A", text: "Lima sila" },
-            { id: "B", text: "Satu negara" },
-            { id: "C", text: "Keadilan sosial" },
-            { id: "D", text: "Persatuan dan kesatuan" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "'Panca' berarti lima dan 'sila' berarti prinsip atau dasar — sehingga Pancasila bermakna lima prinsip dasar.",
-    },
-    {
-        id: "p004",
-        question: "Sila pertama Pancasila berbunyi ...",
-        choices: [
-            { id: "A", text: "Kemanusiaan yang adil dan beradab" },
-            { id: "B", text: "Persatuan Indonesia" },
-            { id: "C", text: "Ketuhanan Yang Maha Esa" },
-            {
-                id: "D",
-                text: "Kerakyatan yang dipimpin oleh hikmat kebijaksanaan",
-            },
+            { id: "D", text: "22 Juni 1945" },
         ],
         answerId: "C",
+        explanation: "Pengesahan dilakukan oleh PPKI 18 Agustus 1945.",
         points: 2,
-        time: 90,
-        explanation:
-            "Sila pertama adalah 'Ketuhanan Yang Maha Esa', menegaskan keyakinan terhadap Tuhan sebagai dasar negara.",
     },
+
     {
-        id: "p005",
-        question: "Sila kedua Pancasila menekankan pada ...",
+        id: "p3",
+        question: "Pancasila tercantum dalam …",
         choices: [
-            { id: "A", text: "Kedaulatan rakyat" },
-            { id: "B", text: "Kemanusiaan yang adil dan beradab" },
-            { id: "C", text: "Persatuan Indonesia" },
-            { id: "D", text: "Keadilan sosial bagi seluruh rakyat Indonesia" },
+            { id: "A", text: "Batang tubuh UUD" },
+            { id: "B", text: "Pembukaan UUD 1945" },
+            { id: "C", text: "Ketetapan MPR" },
+            { id: "D", text: "Piagam Jakarta" },
         ],
         answerId: "B",
+        explanation: "Pancasila tercantum di alinea IV Pembukaan UUD 1945.",
         points: 2,
-        time: 90,
-        explanation:
-            "Sila kedua berbunyi 'Kemanusiaan yang adil dan beradab', menekankan martabat dan keadilan dalam hubungan antar-manusia.",
     },
+
     {
-        id: "p006",
-        question: "Sila ketiga Pancasila berbunyi ...",
+        id: "p4",
+        question: "Pancasila sebagai ideologi bersifat …",
         choices: [
-            { id: "A", text: "Persatuan Indonesia" },
-            {
-                id: "B",
-                text: "Kerakyatan yang dipimpin oleh hikmat kebijaksanaan",
-            },
-            { id: "C", text: "Ketuhanan Yang Maha Esa" },
-            { id: "D", text: "Keadilan sosial bagi seluruh rakyat Indonesia" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Sila ketiga adalah 'Persatuan Indonesia', menegaskan semangat persatuan di tengah keberagaman.",
-    },
-    {
-        id: "p007",
-        question: "Sila keempat Pancasila menekankan prinsip ...",
-        choices: [
-            { id: "A", text: "Demokrasi dan musyawarah untuk mufakat" },
-            { id: "B", text: "Kekuasaan absolut" },
-            { id: "C", text: "Kebebasan tanpa batas" },
-            { id: "D", text: "Hegemoni kelompok tertentu" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Sila keempat berbunyi 'Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan', menekankan demokrasi musyawarah.",
-    },
-    {
-        id: "p008",
-        question: "Sila kelima Pancasila berbunyi ...",
-        choices: [
-            { id: "A", text: "Ketuhanan Yang Maha Esa" },
-            { id: "B", text: "Kemanusiaan yang adil dan beradab" },
-            { id: "C", text: "Keadilan sosial bagi seluruh rakyat Indonesia" },
-            { id: "D", text: "Persatuan Indonesia" },
+            { id: "A", text: "Tertutup" },
+            { id: "B", text: "Kaku" },
+            { id: "C", text: "Terbuka" },
+            { id: "D", text: "Statis" },
         ],
         answerId: "C",
+        explanation: "Pancasila bersifat terbuka dan dinamis.",
         points: 2,
-        time: 90,
-        explanation:
-            "Sila kelima adalah 'Keadilan sosial bagi seluruh rakyat Indonesia', menekankan pemerataan kesejahteraan dan keadilan sosial.",
     },
+
     {
-        id: "p009",
-        question:
-            "Makna 'Ketuhanan Yang Maha Esa' dalam praktik negara adalah ...",
+        id: "p5",
+        question: "Nilai Pancasila bersumber dari …",
         choices: [
-            { id: "A", text: "Negara memaksakan satu agama" },
-            {
-                id: "B",
-                text: "Negara menghormati kebebasan beragama dan ketuhanan",
-            },
-            { id: "C", text: "Agama tidak boleh ada di ruang publik" },
-            { id: "D", text: "Menetapkan ritual tertentu secara hukum" },
+            { id: "A", text: "Ideologi asing" },
+            { id: "B", text: "Budaya bangsa Indonesia" },
+            { id: "C", text: "Perjanjian internasional" },
+            { id: "D", text: "Kolonialisme" },
         ],
         answerId: "B",
+        explanation: "Nilai Pancasila lahir dari kepribadian bangsa.",
         points: 2,
-        time: 120,
-        explanation:
-            "Sila pertama menegaskan bahwa negara menghormati keberagaman keyakinan dan kebebasan beragama, bukan memaksakan satu agama.",
     },
+
     {
-        id: "p010",
-        question:
-            "Nilai 'kemanusiaan yang adil dan beradab' menolak praktik ...",
+        id: "p6",
+        question: "Pancasila sebagai sumber dari segala sumber hukum berarti …",
         choices: [
-            {
-                id: "A",
-                text: "Diskriminasi, penyiksaan, dan perlakuan tidak manusiawi",
-            },
-            { id: "B", text: "Penghormatan hak asasi" },
-            { id: "C", text: "Kepedulian sosial" },
-            { id: "D", text: "Perlindungan minoritas" },
+            { id: "A", text: "Hukum tertinggi negara" },
+            { id: "B", text: "Hukum pidana" },
+            { id: "C", text: "Tidak mengikat" },
+            { id: "D", text: "Sekadar simbol" },
         ],
         answerId: "A",
+        explanation: "Semua peraturan harus bersumber pada Pancasila.",
         points: 2,
-        time: 90,
-        explanation:
-            "Sila kedua menuntut perlakuan adil dan beradab kepada semua manusia sehingga praktik diskriminatif dan kejam ditolak.",
     },
+
     {
-        id: "p011",
-        question: "Salah satu fungsi Pancasila sebagai dasar negara adalah ...",
-        choices: [
-            { id: "A", text: "Sumber dari segala sumber hukum" },
-            { id: "B", text: "Hanya menjadi simbol tanpa fungsi" },
-            { id: "C", text: "Dasar ekonomi saja" },
-            {
-                id: "D",
-                text: "Menggantikan Undang-Undang Dasar tanpa hubungan",
-            },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Pancasila dijadikan dasar negara dan sumber dari segala sumber hukum Indonesia, sehingga menjadi pedoman pembentukan peraturan.",
-    },
-    {
-        id: "p012",
+        id: "p7",
         question:
-            "Dalam hierarki norma hukum Indonesia, Pancasila menempati posisi ...",
+            "Pancasila sebagai pandangan hidup bangsa berfungsi sebagai …",
         choices: [
-            {
-                id: "A",
-                text: "Tingkat tertinggi (pokok dasar negara) sebelum UUD 1945",
-            },
-            { id: "B", text: "Sama dengan peraturan daerah" },
-            { id: "C", text: "Di bawah peraturan menteri" },
-            { id: "D", text: "Tidak termasuk norma hukum" },
+            { id: "A", text: "Alat kekuasaan" },
+            { id: "B", text: "Pedoman sikap hidup" },
+            { id: "C", text: "Peraturan teknis" },
+            { id: "D", text: "Hukum acara" },
         ],
-        answerId: "A",
+        answerId: "B",
+        explanation: "Pandangan hidup menjadi pedoman perilaku.",
         points: 2,
-        time: 120,
-        explanation:
-            "Pancasila merupakan dasar filosofis negara dan menjadi sumber hukum tertinggi sebelum konstitusi dan peraturan perundang-undangan.",
     },
+
     {
-        id: "p013",
-        question:
-            "Istilah 'gotong royong' paling berkaitan dengan sila ke-... Pancasila",
+        id: "p8",
+        question: "Nilai dasar Pancasila bersifat …",
         choices: [
-            { id: "A", text: "Sila ke-1" },
-            { id: "B", text: "Sila ke-2" },
-            { id: "C", text: "Sila ke-3" },
-            { id: "D", text: "Sila ke-5" },
+            { id: "A", text: "Teknis" },
+            { id: "B", text: "Abadi" },
+            { id: "C", text: "Sementara" },
+            { id: "D", text: "Berubah" },
+        ],
+        answerId: "B",
+        explanation: "Nilai dasar Pancasila bersifat tetap.",
+        points: 2,
+    },
+
+    {
+        id: "p9",
+        question: "Hubungan Pancasila dan UUD 1945 adalah …",
+        choices: [
+            { id: "A", text: "Terpisah" },
+            { id: "B", text: "Pancasila menjiwai UUD 1945" },
+            { id: "C", text: "UUD lebih tinggi" },
+            { id: "D", text: "Tidak berkaitan" },
+        ],
+        answerId: "B",
+        explanation: "UUD 1945 dijabarkan dari Pancasila.",
+        points: 2,
+    },
+
+    {
+        id: "p10",
+        question: "Fungsi utama Pancasila sebagai ideologi nasional adalah …",
+        choices: [
+            { id: "A", text: "Memecah bangsa" },
+            { id: "B", text: "Menyatukan bangsa" },
+            { id: "C", text: "Menggantikan agama" },
+            { id: "D", text: "Menghapus budaya" },
+        ],
+        answerId: "B",
+        explanation: "Pancasila berfungsi sebagai pemersatu bangsa.",
+        points: 2,
+    },
+
+    /* ===== 11–20 : SEJARAH ===== */
+    {
+        id: "p11",
+        question: "Tokoh pengusul istilah Pancasila adalah …",
+        choices: [
+            { id: "A", text: "Moh. Yamin" },
+            { id: "B", text: "Soepomo" },
+            { id: "C", text: "Soekarno" },
+            { id: "D", text: "Hatta" },
+        ],
+        answerId: "C",
+        explanation: "Soekarno menyampaikan pidato 1 Juni 1945.",
+        points: 2,
+    },
+
+    {
+        id: "p12",
+        question: "BPUPKI bertugas untuk …",
+        choices: [
+            { id: "A", text: "Menyusun kabinet" },
+            { id: "B", text: "Mempersiapkan kemerdekaan Indonesia" },
+            { id: "C", text: "Mengadili penjajah" },
+            { id: "D", text: "Menjalankan pemerintahan" },
+        ],
+        answerId: "B",
+        explanation: "BPUPKI dibentuk untuk persiapan kemerdekaan.",
+        points: 2,
+    },
+
+    {
+        id: "p13",
+        question: "Piagam Jakarta dirumuskan pada tanggal …",
+        choices: [
+            { id: "A", text: "1 Juni 1945" },
+            { id: "B", text: "17 Agustus 1945" },
+            { id: "C", text: "18 Agustus 1945" },
+            { id: "D", text: "22 Juni 1945" },
         ],
         answerId: "D",
+        explanation: "Piagam Jakarta dirumuskan 22 Juni 1945.",
         points: 2,
-        time: 90,
-        explanation:
-            "Gotong royong berhubungan dengan keadilan sosial dan kerja sama untuk kesejahteraan bersama, berkaitan erat dengan sila ke-5.",
     },
+
     {
-        id: "p014",
-        question:
-            "Prinsip musyawarah untuk mufakat (consultation) sejalan dengan sila ke-... Pancasila",
+        id: "p14",
+        question: "Panitia Sembilan bertugas untuk …",
         choices: [
-            { id: "A", text: "Sila ke-2" },
-            { id: "B", text: "Sila ke-4" },
-            { id: "C", text: "Sila ke-3" },
-            { id: "D", text: "Sila ke-1" },
+            { id: "A", text: "Menyusun kabinet" },
+            { id: "B", text: "Merumuskan dasar negara" },
+            { id: "C", text: "Melantik presiden" },
+            { id: "D", text: "Mengawasi Jepang" },
         ],
         answerId: "B",
+        explanation: "Panitia Sembilan menyusun Piagam Jakarta.",
         points: 2,
-        time: 90,
-        explanation:
-            "Musyawarah untuk mufakat adalah inti sila ke-4 yang menekankan proses demokrasi deliberatif.",
     },
+
     {
-        id: "p015",
-        question:
-            "Salah satu tujuan pengamalan Pancasila di bidang pendidikan adalah ...",
+        id: "p15",
+        question: "Perubahan sila pertama Piagam Jakarta bertujuan untuk …",
         choices: [
-            {
-                id: "A",
-                text: "Mendidik peserta didik beriman, bertakwa, dan berperilaku luhur",
-            },
-            { id: "B", text: "Menghapus pengajaran sejarah" },
-            { id: "C", text: "Membangun negara lain" },
-            { id: "D", text: "Mengutamakan satu agama saja" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Pendidikan Pancasila bertujuan membentuk karakter berlandaskan nilai-nilai Pancasila seperti iman, toleransi, dan tanggung jawab sosial.",
-    },
-    {
-        id: "p016",
-        question:
-            "Salah satu ancaman terhadap pengamalan Pancasila dalam era globalisasi adalah ...",
-        choices: [
-            {
-                id: "A",
-                text: "Masuknya nilai-nilai asing yang bertentangan dengan nilai lokal",
-            },
-            { id: "B", text: "Peningkatan gotong royong" },
-            { id: "C", text: "Peningkatan literasi" },
-            { id: "D", text: "Pemahaman Pancasila yang mendalam" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Globalisasi dapat membawa nilai budaya asing yang jika tidak disaring dapat mengikis nilai-nilai lokal yang sejalan dengan Pancasila.",
-    },
-    {
-        id: "p017",
-        question:
-            "Konsep 'nasionalisme' yang sesuai dengan Pancasila menekankan ...",
-        choices: [
-            {
-                id: "A",
-                text: "Kebangsaan inklusif yang menghargai keberagaman",
-            },
-            { id: "B", text: "Etnosentrisme sempit" },
-            { id: "C", text: "Eksklusivitas budaya" },
-            { id: "D", text: "Penolakan terhadap luar negeri" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Nasionalisme Pancasila bersifat inklusif, menegaskan persatuan tanpa menghapus keragaman budaya dan agama.",
-    },
-    {
-        id: "p018",
-        question:
-            "Salah satu implementasi sila ke-2 dalam kebijakan publik adalah ...",
-        choices: [
-            {
-                id: "A",
-                text: "Perlindungan hak asasi manusia dan anti-diskriminasi",
-            },
-            { id: "B", text: "Penindasan kelompok minoritas" },
-            { id: "C", text: "Politik berdasarkan suku" },
-            { id: "D", text: "Menghapus kebebasan berpendapat" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Sila ke-2 mendorong kebijakan yang menegakkan hak asasi, kesetaraan, dan perlakuan adil bagi semua warga.",
-    },
-    {
-        id: "p019",
-        question: "Salah satu bentuk pengamalan sila ke-3 adalah ...",
-        choices: [
-            {
-                id: "A",
-                text: "Mengutamakan kepentingan bangsa dan negara di atas kepentingan golongan",
-            },
-            { id: "B", text: "Mengganti bendera negara" },
-            { id: "C", text: "Mengisolasi satu daerah" },
-            { id: "D", text: "Memperkuat separatisme" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Sila ke-3 Persatuan Indonesia menegaskan pentingnya kesatuan dan menempatkan kepentingan nasional di atas kepentingan sektoral.",
-    },
-    {
-        id: "p020",
-        question: "Konsep 'kedaulatan rakyat' dalam Pancasila berarti ...",
-        choices: [
-            {
-                id: "A",
-                text: "Rakyat adalah sumber kekuasaan dan berhak memilih wakilnya secara demokratis",
-            },
-            { id: "B", text: "Penguasa mutlak tanpa kontrol" },
-            { id: "C", text: "Rakyat tidak berhak berpendapat" },
-            { id: "D", text: "Hanya elit yang berdaulat" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Kedaulatan rakyat berarti legitimasi pemerintahan berasal dari kehendak rakyat, dilaksanakan melalui mekanisme demokrasi.",
-    },
-    {
-        id: "p021",
-        question: "Pancasila sebagai ideologi terbuka artinya ...",
-        choices: [
-            {
-                id: "A",
-                text: "Memungkinkan adaptasi nilai sepanjang tidak bertentangan dengan sila-sila pokok",
-            },
-            { id: "B", text: "Semua nilai asing harus ditolak" },
-            { id: "C", text: "Tidak boleh berubah dalam bentuk apapun" },
-            { id: "D", text: "Hanya mengikuti sistem ideologi lain" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Pancasila disebut ideologi terbuka karena dapat diinterpretasikan dalam konteks zaman, selama esensi lima sila tetap dihormati.",
-    },
-    {
-        id: "p022",
-        question:
-            "Salah satu upaya penanaman nilai Pancasila dalam keluarga adalah ...",
-        choices: [
-            {
-                id: "A",
-                text: "Mencontohkan toleransi, disiplin, dan saling menghormati antar anggota keluarga",
-            },
-            { id: "B", text: "Memaksakan pandangan tunggal" },
-            { id: "C", text: "Mengabaikan pendidikan moral" },
-            { id: "D", text: "Mengisolasi anak dari masyarakat" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Keluarga sebagai lingkungan pertama dapat mengajarkan nilai Pancasila melalui contoh perilaku sehari-hari.",
-    },
-    {
-        id: "p023",
-        question: "Peran media massa dalam menguatkan Pancasila adalah ...",
-        choices: [
-            {
-                id: "A",
-                text: "Menyebarkan informasi yang membangun kesadaran kebangsaan dan toleransi",
-            },
-            { id: "B", text: "Menyebarkan hoaks untuk keuntungan" },
-            { id: "C", text: "Mengintimidasi kelompok tertentu" },
-            { id: "D", text: "Mengurus urusan internal partai" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Media yang bertanggung jawab dapat mempromosikan nilai-nilai Pancasila, edukasi publik, dan mencegah disinformasi.",
-    },
-    {
-        id: "p024",
-        question:
-            "Salah satu bentuk pelanggaran terhadap Pancasila di kehidupan bernegara adalah ...",
-        choices: [
-            {
-                id: "A",
-                text: "Tindakan diskriminatif, intoleransi, atau upaya pemisahan wilayah",
-            },
-            { id: "B", text: "Mengamalkan gotong royong" },
-            { id: "C", text: "Menghormati perbedaan" },
-            { id: "D", text: "Berkontribusi pada pembangunan" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Diskriminasi, intoleransi, dan separatisme bertentangan dengan nilai persatuan, kemanusiaan, dan keadilan Pancasila.",
-    },
-    {
-        id: "p025",
-        question:
-            "Makna integrasi nasional berkaitan erat dengan sila ke-... Pancasila",
-        choices: [
-            { id: "A", text: "Sila ke-1 dan ke-2" },
-            { id: "B", text: "Sila ke-3 Persatuan Indonesia" },
-            { id: "C", text: "Sila ke-5 saja" },
-            { id: "D", text: "Sila ke-4 saja" },
+            { id: "A", text: "Kepentingan kelompok" },
+            { id: "B", text: "Persatuan bangsa" },
+            { id: "C", text: "Tekanan asing" },
+            { id: "D", text: "Ideologi agama" },
         ],
         answerId: "B",
+        explanation: "Perubahan dilakukan demi persatuan nasional.",
         points: 2,
-        time: 90,
-        explanation:
-            "Integrasi nasional terutama terkait sila ke-3 yang menekankan persatuan di antara keragaman suku, agama, dan budaya.",
     },
+
     {
-        id: "p026",
-        question: "Dalam konteks Pancasila, 'kebhinekaan' artinya ...",
+        id: "p16",
+        question: "PPKI berperan dalam …",
         choices: [
-            {
-                id: "A",
-                text: "Keberagaman suku, budaya, agama, dan bahasa yang harus dihormati",
-            },
-            { id: "B", text: "Keseragaman total" },
-            { id: "C", text: "Penghapusan budaya lokal" },
-            { id: "D", text: "Pemisahan komunitas" },
+            { id: "A", text: "Merumuskan Pancasila awal" },
+            { id: "B", text: "Mengesahkan UUD 1945" },
+            { id: "C", text: "Menjajah Indonesia" },
+            { id: "D", text: "Mengawasi BPUPKI" },
         ],
-        answerId: "A",
+        answerId: "B",
+        explanation: "PPKI mengesahkan UUD 1945 dan Pancasila.",
         points: 2,
-        time: 90,
-        explanation:
-            "Kebhinekaan adalah kenyataan sosial yang diakui dan dijaga agar harmoni dapat terwujud di bawah Pancasila.",
     },
+
     {
-        id: "p027",
+        id: "p17",
+        question: "Pidato 1 Juni 1945 disampaikan dalam sidang …",
+        choices: [
+            { id: "A", text: "PPKI" },
+            { id: "B", text: "BPUPKI" },
+            { id: "C", text: "KNIP" },
+            { id: "D", text: "MPR" },
+        ],
+        answerId: "B",
+        explanation: "Pidato Soekarno disampaikan di BPUPKI.",
+        points: 2,
+    },
+
+    {
+        id: "p18",
+        question: "Rumusan final Pancasila terdapat dalam …",
+        choices: [
+            { id: "A", text: "Piagam Jakarta" },
+            { id: "B", text: "Pembukaan UUD 1945" },
+            { id: "C", text: "Ketetapan MPR" },
+            { id: "D", text: "Maklumat pemerintah" },
+        ],
+        answerId: "B",
+        explanation: "Rumusan final terdapat di Pembukaan UUD.",
+        points: 2,
+    },
+
+    {
+        id: "p19",
         question:
-            "Sikap kritis yang sesuai dengan semangat Pancasila adalah ...",
+            "Nilai Pancasila yang berkaitan dengan sejarah disebut nilai …",
         choices: [
-            {
-                id: "A",
-                text: "Mengkritik untuk membangun dengan dasar fakta dan musyawarah",
-            },
-            { id: "B", text: "Menghujat tanpa alasan" },
-            { id: "C", text: "Menyebar fitnah" },
-            { id: "D", text: "Menghindari diskusi" },
+            { id: "A", text: "Instrumental" },
+            { id: "B", text: "Praktis" },
+            { id: "C", text: "Historis" },
+            { id: "D", text: "Teknis" },
+        ],
+        answerId: "C",
+        explanation:
+            "Nilai historis berkaitan dengan proses lahirnya Pancasila.",
+        points: 2,
+    },
+
+    {
+        id: "p20",
+        question: "Pancasila lahir melalui proses …",
+        choices: [
+            { id: "A", text: "Paksaan asing" },
+            { id: "B", text: "Pemikiran tokoh bangsa" },
+            { id: "C", text: "Revolusi industri" },
+            { id: "D", text: "Perang ideologi" },
+        ],
+        answerId: "B",
+        explanation: "Pancasila lahir dari pemikiran para pendiri bangsa.",
+        points: 2,
+    },
+
+    /* ===== 21–30 : MAKNA SILA ===== */
+    {
+        id: "p21",
+        question: "Makna sila pertama adalah …",
+        choices: [
+            { id: "A", text: "Negara agama" },
+            { id: "B", text: "Kepercayaan kepada Tuhan YME" },
+            { id: "C", text: "Anti agama" },
+            { id: "D", text: "Sekularisme" },
+        ],
+        answerId: "B",
+        explanation: "Sila pertama menegaskan ketuhanan.",
+        points: 2,
+    },
+
+    {
+        id: "p22",
+        question: "Sila kedua menekankan nilai …",
+        choices: [
+            { id: "A", text: "Persatuan" },
+            { id: "B", text: "Kemanusiaan" },
+            { id: "C", text: "Musyawarah" },
+            { id: "D", text: "Kesejahteraan" },
+        ],
+        answerId: "B",
+        explanation: "Sila kedua menekankan nilai kemanusiaan.",
+        points: 2,
+    },
+
+    {
+        id: "p23",
+        question: "Gotong royong mencerminkan sila …",
+        choices: [
+            { id: "A", text: "Pertama" },
+            { id: "B", text: "Kedua" },
+            { id: "C", text: "Ketiga" },
+            { id: "D", text: "Keempat" },
+        ],
+        answerId: "C",
+        explanation: "Gotong royong mencerminkan persatuan.",
+        points: 2,
+    },
+
+    {
+        id: "p24",
+        question: "Sila keempat mengajarkan …",
+        choices: [
+            { id: "A", text: "Otoriter" },
+            { id: "B", text: "Musyawarah" },
+            { id: "C", text: "Individualisme" },
+            { id: "D", text: "Kapitalisme" },
+        ],
+        answerId: "B",
+        explanation: "Keputusan diambil melalui musyawarah.",
+        points: 2,
+    },
+
+    {
+        id: "p25",
+        question: "Sila kelima berkaitan dengan …",
+        choices: [
+            { id: "A", text: "Keadilan sosial" },
+            { id: "B", text: "Kebebasan mutlak" },
+            { id: "C", text: "Hak elite" },
+            { id: "D", text: "Monopoli" },
         ],
         answerId: "A",
+        explanation: "Sila kelima menekankan keadilan sosial.",
         points: 2,
-        time: 120,
-        explanation:
-            "Kritis dalam semangat Pancasila bertujuan perbaikan melalui diskusi rasional, bukan destruktif atau provokatif.",
     },
+
     {
-        id: "p028",
-        question:
-            "Salah satu bentuk penguatan Pancasila pada sektor ekonomi adalah ...",
+        id: "p26",
+        question: "Pengamalan sila pertama ditunjukkan dengan …",
         choices: [
-            {
-                id: "A",
-                text: "Mengembangkan ekonomi gotong royong dan memberdayakan UMKM",
-            },
-            { id: "B", text: "Monopoli oleh segelintir pihak" },
-            { id: "C", text: "Eksploitasi tanpa kontrol" },
-            { id: "D", text: "Mengabaikan kesejahteraan rakyat" },
+            { id: "A", text: "Toleransi beragama" },
+            { id: "B", text: "Gotong royong" },
+            { id: "C", text: "Musyawarah" },
+            { id: "D", text: "Keadilan ekonomi" },
         ],
         answerId: "A",
+        explanation: "Toleransi beragama mencerminkan sila pertama.",
         points: 2,
-        time: 120,
-        explanation:
-            "Ekonomi yang berlandaskan Pancasila mendorong pemerataan, gotong royong, dan pemberdayaan masyarakat kecil.",
     },
+
     {
-        id: "p029",
-        question:
-            "Peran organisasi kemasyarakatan (ormas) dalam pengamalan Pancasila sebaiknya ...",
+        id: "p27",
+        question: "Pengamalan sila kedua adalah …",
         choices: [
-            {
-                id: "A",
-                text: "Mendukung persatuan, toleransi, dan pembangunan sosial",
-            },
-            { id: "B", text: "Memprovokasi perpecahan" },
-            { id: "C", text: "Melakukan kekerasan" },
-            { id: "D", text: "Bekerja tanpa aturan" },
+            { id: "A", text: "Menghormati martabat manusia" },
+            { id: "B", text: "Monopoli kekuasaan" },
+            { id: "C", text: "Fanatisme sempit" },
+            { id: "D", text: "Diskriminasi" },
         ],
         answerId: "A",
+        explanation: "Sila kedua menjunjung martabat manusia.",
         points: 2,
-        time: 90,
-        explanation:
-            "Ormas yang sehat berkontribusi pada penguatan nilai Pancasila dan advokasi sosial yang konstruktif.",
     },
+
     {
-        id: "p030",
-        question: "Landasan filosofis Pancasila dapat disebut juga sebagai ...",
+        id: "p28",
+        question: "Pengamalan sila ketiga adalah …",
         choices: [
-            { id: "A", text: "Pandangan hidup bangsa Indonesia" },
-            { id: "B", text: "Sekadar slogan tanpa makna" },
-            { id: "C", text: "Hanya simbol negara" },
-            { id: "D", text: "Hukum perdata" },
+            { id: "A", text: "Egoisme" },
+            { id: "B", text: "Cinta tanah air" },
+            { id: "C", text: "Intoleransi" },
+            { id: "D", text: "Diskriminasi" },
+        ],
+        answerId: "B",
+        explanation: "Cinta tanah air mencerminkan persatuan.",
+        points: 2,
+    },
+
+    {
+        id: "p29",
+        question: "Pengamalan sila keempat adalah …",
+        choices: [
+            { id: "A", text: "Voting paksa" },
+            { id: "B", text: "Musyawarah mufakat" },
+            { id: "C", text: "Diktator" },
+            { id: "D", text: "Anarkisme" },
+        ],
+        answerId: "B",
+        explanation: "Sila keempat menekankan musyawarah.",
+        points: 2,
+    },
+
+    {
+        id: "p30",
+        question: "Pengamalan sila kelima adalah …",
+        choices: [
+            { id: "A", text: "Keadilan bagi semua" },
+            { id: "B", text: "Kesenjangan sosial" },
+            { id: "C", text: "Monopoli" },
+            { id: "D", text: "Eksploitasi" },
         ],
         answerId: "A",
+        explanation: "Keadilan sosial harus dirasakan semua rakyat.",
         points: 2,
-        time: 90,
-        explanation:
-            "Pancasila berfungsi sebagai pandangan hidup bangsa yang menjadi pedoman sikap dan tindakan warga negara.",
     },
+
+    /* ===== 31–40 : IMPLEMENTASI ===== */
     {
-        id: "p031",
-        question:
-            "Salah satu tantangan penanaman nilai Pancasila di kalangan pemuda adalah ...",
+        id: "p31",
+        question: "Pancasila dalam bidang politik menekankan …",
         choices: [
-            { id: "A", text: "Pengaruh hoaks dan radikalisme di media sosial" },
-            { id: "B", text: "Minat belajar yang tinggi" },
-            { id: "C", text: "Perhatian terhadap kebudayaan sendiri" },
-            { id: "D", text: "Keterlibatan aktif dalam masyarakat" },
+            { id: "A", text: "Demokrasi Pancasila" },
+            { id: "B", text: "Otoriter" },
+            { id: "C", text: "Liberalisme murni" },
+            { id: "D", text: "Anarkisme" },
         ],
         answerId: "A",
+        explanation: "Politik Pancasila berdasarkan demokrasi.",
         points: 2,
-        time: 120,
-        explanation:
-            "Media sosial dapat menyebarkan informasi salah dan ideologi ekstrem yang mengancam nilai-nilai Pancasila jika tidak disikapi kritis.",
     },
+
     {
-        id: "p032",
-        question: "Peran guru dan dosen dalam pengamalan Pancasila adalah ...",
+        id: "p32",
+        question: "Pancasila dalam bidang ekonomi menekankan …",
         choices: [
-            {
-                id: "A",
-                text: "Menjadi teladan, mengajarkan nilai-nilai Pancasila, dan mendorong diskusi kritis",
-            },
-            { id: "B", text: "Hanya mengajar materi teknis tanpa nilai" },
-            { id: "C", text: "Mengisolasi siswa dari kehidupan sosial" },
-            { id: "D", text: "Membatasi kebebasan berpikir" },
+            { id: "A", text: "Ekonomi kerakyatan" },
+            { id: "B", text: "Kapitalisme murni" },
+            { id: "C", text: "Monopoli" },
+            { id: "D", text: "Liberalisme" },
         ],
         answerId: "A",
+        explanation: "Ekonomi Pancasila berasas kekeluargaan.",
         points: 2,
-        time: 120,
-        explanation:
-            "Pendidik berperan penting dalam menanamkan nilai Pancasila melalui keteladanan dan pengajaran yang kontekstual.",
     },
+
     {
-        id: "p033",
-        question:
-            "Pengertian 'kewajiban warga negara' menurut Pancasila mencakup ...",
+        id: "p33",
+        question: "Pancasila dalam bidang sosial menekankan …",
         choices: [
-            {
-                id: "A",
-                text: "Menghormati hukum, berpartisipasi dalam pembangunan, dan menjaga persatuan",
-            },
-            { id: "B", text: "Hanya menuntut hak tanpa kewajiban" },
-            { id: "C", text: "Mengabaikan kepentingan umum" },
-            { id: "D", text: "Melakukan tindakan anarkis" },
+            { id: "A", text: "Individualisme" },
+            { id: "B", text: "Solidaritas sosial" },
+            { id: "C", text: "Diskriminasi" },
+            { id: "D", text: "Egoisme" },
+        ],
+        answerId: "B",
+        explanation: "Solidaritas sosial sesuai nilai Pancasila.",
+        points: 2,
+    },
+
+    {
+        id: "p34",
+        question: "Pancasila dalam bidang hukum berarti …",
+        choices: [
+            { id: "A", text: "Hukum berkeadilan" },
+            { id: "B", text: "Hukum kekuasaan" },
+            { id: "C", text: "Hukum rimba" },
+            { id: "D", text: "Hukum elit" },
         ],
         answerId: "A",
+        explanation: "Hukum harus berlandaskan keadilan.",
         points: 2,
-        time: 90,
-        explanation:
-            "Warga negara memiliki kewajiban moral dan konstitusional untuk berkontribusi pada kesejahteraan dan menjaga persatuan.",
     },
+
     {
-        id: "p034",
-        question:
-            "Pengamalan Pancasila di lembaga penegak hukum seharusnya menekankan ...",
+        id: "p35",
+        question: "Pancasila sebagai ideologi terbuka berarti …",
         choices: [
-            {
-                id: "A",
-                text: "Keadilan, tidak memihak, dan menghormati hak asasi manusia",
-            },
-            { id: "B", text: "Pemaksaan tanpa proses hukum" },
-            { id: "C", text: "Penindasan kelompok tertentu" },
-            { id: "D", text: "Korupsi untuk keuntungan" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Lembaga penegak hukum yang berpegang pada Pancasila harus adil dan menghormati HAM dalam menjalankan tugas.",
-    },
-    {
-        id: "p035",
-        question: "Istilah 'Pancasila ekonomis' sering dikaitkan dengan ...",
-        choices: [
-            {
-                id: "A",
-                text: "Sistem ekonomi yang menekankan kesejahteraan rakyat dan keadilan sosial",
-            },
-            { id: "B", text: "Ekonomi pasar bebas tanpa aturan" },
-            { id: "C", text: "Sistem ekonomi komunis total" },
-            { id: "D", text: "Monopoli negara tanpa kontrol" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Ekonomi Pancasila berfokus pada pemerataan, keberpihakan pada rakyat, dan prinsip gotong royong dalam kegiatan ekonomi.",
-    },
-    {
-        id: "p036",
-        question:
-            "Peran KBK (Kegiatan Belajar Mengajar) untuk menumbuhkan sikap Pancasila sebaiknya melibatkan ...",
-        choices: [
-            {
-                id: "A",
-                text: "Pembelajaran kontekstual, praktik sosial, dan refleksi nilai",
-            },
-            { id: "B", text: "Penghafalan teks tanpa pemahaman" },
-            { id: "C", text: "Pengajaran dogmatis tanpa dialog" },
-            { id: "D", text: "Mengabaikan topik sosial" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Pembelajaran Pancasila efektif bila menggabungkan teori, praktik, dan diskusi agar nilai dapat diaplikasikan.",
-    },
-    {
-        id: "p037",
-        question:
-            "Semangat 'musyawarah' dalam pengambilan keputusan publik penting untuk mencegah ...",
-        choices: [
-            { id: "A", text: "Tindakan otoriter dan keputusan sepihak" },
-            { id: "B", text: "Keterlibatan masyarakat" },
-            { id: "C", text: "Keadilan sosial" },
-            { id: "D", text: "Partisipasi aktif" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Musyawarah mendorong partisipasi dan mufakat sehingga mengurangi kemungkinan keputusan otoriter.",
-    },
-    {
-        id: "p038",
-        question:
-            "Salah satu indikator negara demokratis yang sesuai Pancasila adalah ...",
-        choices: [
-            {
-                id: "A",
-                text: "Adanya mekanisme perwakilan yang akuntabel dan penghormatan terhadap HAM",
-            },
-            { id: "B", text: "Ketiadaan pemilu" },
-            { id: "C", text: "Pembungkaman oposisi" },
-            { id: "D", text: "Pemerintahan tanpa pengawasan" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Demokrasi Pancasila menekankan perwakilan, akuntabilitas, dan penghormatan HAM untuk legitimasi pemerintahan.",
-    },
-    {
-        id: "p039",
-        question:
-            "Upaya membangun toleransi antarumat beragama dapat dilakukan dengan ...",
-        choices: [
-            {
-                id: "A",
-                text: "Dialog antaragama, pendidikan nilai, dan kerja sama sosial lintas keyakinan",
-            },
-            { id: "B", text: "Memaksakan satu pandangan agama" },
-            { id: "C", text: "Mengisolasi kelompok minoritas" },
-            { id: "D", text: "Menghapus pendidikan agama" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Dialog dan kerjasama antarumat membantu membangun saling pengertian dan toleransi sesuai sila pertama dan kedua.",
-    },
-    {
-        id: "p040",
-        question:
-            "Penerapan Pancasila dalam hubungan internasional menekankan ...",
-        choices: [
-            {
-                id: "A",
-                text: "Kedaulatan nasional, perdamaian, dan kerja sama internasional yang adil",
-            },
-            { id: "B", text: "Intervensi tanpa alasan" },
-            { id: "C", text: "Ekspansi wilayah agresif" },
-            { id: "D", text: "Pemaksaan politik luar negeri" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Dalam hubungan internasional Pancasila mendorong sikap menghormati kedaulatan dan mempromosikan perdamaian serta keadilan.",
-    },
-    {
-        id: "p041",
-        question:
-            "Nilai 'keadilan sosial' dapat diwujudkan melalui kebijakan publik seperti ...",
-        choices: [
-            {
-                id: "A",
-                text: "Pemerataan akses pendidikan, kesehatan, dan perlindungan sosial",
-            },
-            { id: "B", text: "Kebijakan yang hanya menguntungkan elit" },
-            { id: "C", text: "Penghapusan layanan publik" },
-            { id: "D", text: "Monopoli sumber daya" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Keadilan sosial bertujuan memastikan hak dasar terpenuhi untuk seluruh warga melalui kebijakan pro-rakyat.",
-    },
-    {
-        id: "p042",
-        question:
-            "Penguatan karakter bangsa melalui Pancasila mesti dimulai dari ...",
-        choices: [
-            { id: "A", text: "Keluarga, sekolah, dan lingkungan sosial" },
-            { id: "B", text: "Hanya pemerintah pusat" },
-            { id: "C", text: "Luar negeri" },
-            { id: "D", text: "Media sosial semata" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Penanaman nilai Pancasila paling efektif bila dimulai di keluarga, dilanjutkan pendidikan formal dan praktik sosial sehari-hari.",
-    },
-    {
-        id: "p043",
-        question:
-            "Salah satu bentuk penghormatan terhadap simbol negara (lambang Pancasila) adalah ...",
-        choices: [
-            {
-                id: "A",
-                text: "Menghormati, tidak merendahkan, dan menggunakannya sesuai aturan",
-            },
-            { id: "B", text: "Mengubah lambang untuk kepentingan pribadi" },
-            { id: "C", text: "Mencoret-coret secara sengaja" },
-            { id: "D", text: "Menggunakan lambang untuk provokasi" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Simbol negara harus dihormati sebagai representasi identitas nasional dan nilai Pancasila.",
-    },
-    {
-        id: "p044",
-        question:
-            "Upaya pencegahan radikalisme yang sesuai Pancasila melibatkan ...",
-        choices: [
-            {
-                id: "A",
-                text: "Pendidikan karakter, dialog antar kelompok, dan penegakan hukum yang adil",
-            },
-            { id: "B", text: "Represi massal tanpa proses" },
-            { id: "C", text: "Mengabaikan akar masalah" },
-            { id: "D", text: "Mendukung intoleransi" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Pencegahan efektif menggabungkan pendekatan preventif, edukatif, dan penegakan hukum yang menghormati HAM.",
-    },
-    {
-        id: "p045",
-        question:
-            "Sikap etis pejabat publik menurut nilai Pancasila adalah ...",
-        choices: [
-            {
-                id: "A",
-                text: "Bertanggung jawab, transparan, anti-korupsi, dan melayani kepentingan umum",
-            },
-            { id: "B", text: "Memprioritaskan keuntungan pribadi" },
-            { id: "C", text: "Menutupi penyalahgunaan wewenang" },
-            { id: "D", text: "Memaksakan keputusan tanpa musyawarah" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Pejabat publik harus bertindak melayani rakyat, menjaga integritas, dan menolak korupsi sesuai semangat Pancasila.",
-    },
-    {
-        id: "p046",
-        question: "Peran budaya lokal dalam penguatan Pancasila adalah ...",
-        choices: [
-            {
-                id: "A",
-                text: "Menjadi medium nilai-nilai Pancasila yang relevan secara kontekstual",
-            },
-            { id: "B", text: "Menggantikan nilai Pancasila" },
-            { id: "C", text: "Menciptakan konflik budaya" },
-            { id: "D", text: "Hanya untuk hiburan" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 90,
-        explanation:
-            "Budaya lokal dapat mengandung nilai-nilai yang selaras dengan Pancasila dan jadi sarana edukasi moral.",
-    },
-    {
-        id: "p047",
-        question:
-            "Implementasi Pancasila dalam pembangunan berkelanjutan menuntut ...",
-        choices: [
-            {
-                id: "A",
-                text: "Keseimbangan antara ekonomi, sosial, dan lingkungan demi kesejahteraan generasi kini dan mendatang",
-            },
-            { id: "B", text: "Eksploitasi lingkungan tanpa batas" },
-            { id: "C", text: "Hanya fokus keuntungan finansial" },
-            { id: "D", text: "Mengabaikan masyarakat lokal" },
-        ],
-        answerId: "A",
-        points: 2,
-        time: 120,
-        explanation:
-            "Pembangunan berkelanjutan sejalan dengan keadilan sosial Pancasila, memperhatikan kesejahteraan jangka panjang.",
-    },
-    {
-        id: "p048",
-        question:
-            "Salah satu indikator keberhasilan pendidikan Pancasila di perguruan tinggi adalah ...",
-        choices: [
-            {
-                id: "A",
-                text: "Mahasiswa menunjukkan sikap toleran, kritis, dan berpartisipasi dalam kegiatan sosial",
-            },
+            { id: "A", text: "Bisa diubah bebas" },
             {
                 id: "B",
-                text: "Mahasiswa hanya fokus nilai akademik tanpa moral",
+                text: "Menyesuaikan zaman tanpa kehilangan nilai dasar",
             },
-            { id: "C", text: "Meningkatnya intoleransi" },
-            { id: "D", text: "Isolasi komunal" },
+            { id: "C", text: "Kaku" },
+            { id: "D", text: "Tertutup" },
         ],
-        answerId: "A",
+        answerId: "B",
+        explanation: "Nilai dasar tetap, penerapan menyesuaikan zaman.",
         points: 2,
-        time: 90,
-        explanation:
-            "Pendidikan Pancasila yang efektif terlihat dari perilaku mahasiswa yang mencerminkan nilai-nilai kebangsaan dan sosial.",
     },
+
     {
-        id: "p049",
-        question:
-            "Perumusan Pancasila melewati beberapa tahap dalam sidang BPUPKI. Salah satu tokoh penting selain Soekarno adalah ...",
+        id: "p36",
+        question: "Globalisasi menjadi tantangan Pancasila karena …",
         choices: [
-            { id: "A", text: "Mohammad Yamin" },
-            { id: "B", text: "Otto Iskandar di Nata" },
-            { id: "C", text: "Sukarno hanya sendiri tanpa tokoh lain" },
-            { id: "D", text: "Ir. H. Agus Salim" },
+            { id: "A", text: "Masuknya nilai asing" },
+            { id: "B", text: "Persatuan meningkat" },
+            { id: "C", text: "Gotong royong kuat" },
+            { id: "D", text: "Budaya lokal lestari" },
         ],
         answerId: "A",
+        explanation: "Nilai asing harus diseleksi.",
         points: 2,
-        time: 120,
-        explanation:
-            "Mohammad Yamin turut mengemukakan konsep dasar negara; berbagai tokoh memberi kontribusi dalam perumusan Pancasila.",
     },
+
     {
-        id: "p050",
-        question:
-            "Upaya menjaga kelangsungan nilai Pancasila di era digital dapat dilakukan dengan ...",
+        id: "p37",
+        question: "Sikap menghadapi globalisasi sesuai Pancasila adalah …",
         choices: [
-            {
-                id: "A",
-                text: "Edukasi literasi digital, penyebaran nilai melalui konten kreatif, dan pencegahan hoaks",
-            },
-            { id: "B", text: "Membatasi seluruh akses informasi" },
-            { id: "C", text: "Menghapus pendidikan Pancasila" },
-            { id: "D", text: "Mengganti Pancasila dengan ideologi lain" },
+            { id: "A", text: "Menolak total" },
+            { id: "B", text: "Menyaring secara selektif" },
+            { id: "C", text: "Menerima semua" },
+            { id: "D", text: "Mengabaikan" },
+        ],
+        answerId: "B",
+        explanation: "Seleksi sesuai nilai Pancasila.",
+        points: 2,
+    },
+
+    {
+        id: "p38",
+        question: "Radikalisme bertentangan dengan Pancasila karena …",
+        choices: [
+            { id: "A", text: "Menghargai perbedaan" },
+            { id: "B", text: "Menggunakan kekerasan" },
+            { id: "C", text: "Mengutamakan musyawarah" },
+            { id: "D", text: "Menjaga persatuan" },
+        ],
+        answerId: "B",
+        explanation: "Radikalisme bertentangan dengan kemanusiaan.",
+        points: 2,
+    },
+
+    {
+        id: "p39",
+        question: "Pendidikan Pancasila bertujuan untuk …",
+        choices: [
+            { id: "A", text: "Menghafal sila" },
+            { id: "B", text: "Membentuk karakter bangsa" },
+            { id: "C", text: "Formalitas" },
+            { id: "D", text: "Mengganti agama" },
+        ],
+        answerId: "B",
+        explanation: "Tujuan utamanya pembentukan karakter.",
+        points: 2,
+    },
+
+    {
+        id: "p40",
+        question: "Pancasila sebagai identitas nasional berarti …",
+        choices: [
+            { id: "A", text: "Simbol kosong" },
+            { id: "B", text: "Jati diri bangsa Indonesia" },
+            { id: "C", text: "Produk asing" },
+            { id: "D", text: "Aturan teknis" },
+        ],
+        answerId: "B",
+        explanation: "Pancasila adalah jati diri bangsa.",
+        points: 2,
+    },
+
+    /* ===== 41–50 : PENUTUP ===== */
+    {
+        id: "p41",
+        question: "Sikap individualisme berlebihan bertentangan dengan sila …",
+        choices: [
+            { id: "A", text: "Pertama" },
+            { id: "B", text: "Kedua" },
+            { id: "C", text: "Ketiga" },
+            { id: "D", text: "Keempat" },
+        ],
+        answerId: "C",
+        explanation: "Individualisme merusak persatuan.",
+        points: 2,
+    },
+
+    {
+        id: "p42",
+        question: "Musyawarah mufakat mencerminkan …",
+        choices: [
+            { id: "A", text: "Liberalisme" },
+            { id: "B", text: "Demokrasi Pancasila" },
+            { id: "C", text: "Otoriter" },
+            { id: "D", text: "Anarkisme" },
+        ],
+        answerId: "B",
+        explanation: "Demokrasi Pancasila berbasis musyawarah.",
+        points: 2,
+    },
+
+    {
+        id: "p43",
+        question: "Menghargai perbedaan pendapat mencerminkan sila …",
+        choices: [
+            { id: "A", text: "Kedua" },
+            { id: "B", text: "Ketiga" },
+            { id: "C", text: "Keempat" },
+            { id: "D", text: "Kelima" },
+        ],
+        answerId: "C",
+        explanation: "Sila keempat menekankan demokrasi.",
+        points: 2,
+    },
+
+    {
+        id: "p44",
+        question: "Pancasila relevan sepanjang masa karena …",
+        choices: [
+            { id: "A", text: "Kaku" },
+            { id: "B", text: "Terbuka dan dinamis" },
+            { id: "C", text: "Dipaksakan" },
+            { id: "D", text: "Tidak berubah" },
+        ],
+        answerId: "B",
+        explanation: "Pancasila mampu menyesuaikan perkembangan zaman.",
+        points: 2,
+    },
+
+    {
+        id: "p45",
+        question: "Pancasila sebagai ideologi nasional berfungsi sebagai …",
+        choices: [
+            { id: "A", text: "Pemersatu bangsa" },
+            { id: "B", text: "Alat kekuasaan" },
+            { id: "C", text: "Hukum pidana" },
+            { id: "D", text: "Aturan teknis" },
         ],
         answerId: "A",
+        explanation: "Pancasila mempersatukan bangsa.",
         points: 2,
-        time: 120,
-        explanation:
-            "Di era digital, literasi dan penyebaran konten yang positif penting untuk mempertahankan pemahaman dan nilai Pancasila.",
+    },
+
+    {
+        id: "p46",
+        question: "Pengamalan Pancasila harus dilakukan secara …",
+        choices: [
+            { id: "A", text: "Terpisah" },
+            { id: "B", text: "Sebagian" },
+            { id: "C", text: "Menyeluruh" },
+            { id: "D", text: "Situasional" },
+        ],
+        answerId: "C",
+        explanation: "Kelima sila saling berkaitan.",
+        points: 2,
+    },
+
+    {
+        id: "p47",
+        question: "Pancasila menjadi pedoman hidup berarti …",
+        choices: [
+            { id: "A", text: "Sekadar simbol" },
+            { id: "B", text: "Menjadi arah sikap dan tindakan" },
+            { id: "C", text: "Hanya teori" },
+            { id: "D", text: "Tidak mengikat" },
+        ],
+        answerId: "B",
+        explanation: "Pancasila mengarahkan perilaku bangsa.",
+        points: 2,
+    },
+
+    {
+        id: "p48",
+        question: "Menjaga persatuan dalam keberagaman mencerminkan sila …",
+        choices: [
+            { id: "A", text: "Pertama" },
+            { id: "B", text: "Kedua" },
+            { id: "C", text: "Ketiga" },
+            { id: "D", text: "Kelima" },
+        ],
+        answerId: "C",
+        explanation: "Persatuan adalah inti sila ketiga.",
+        points: 2,
+    },
+
+    {
+        id: "p49",
+        question: "Keadilan sosial berarti …",
+        choices: [
+            { id: "A", text: "Sama rata" },
+            { id: "B", text: "Hak dan kewajiban seimbang" },
+            { id: "C", text: "Hak elit" },
+            { id: "D", text: "Kebebasan mutlak" },
+        ],
+        answerId: "B",
+        explanation: "Keadilan sosial bersifat proporsional.",
+        points: 2,
+    },
+
+    {
+        id: "p50",
+        question: "Kesimpulan utama Pancasila adalah …",
+        choices: [
+            { id: "A", text: "Ideologi tertutup" },
+            { id: "B", text: "Dasar dan pedoman hidup bangsa Indonesia" },
+            { id: "C", text: "Aturan sementara" },
+            { id: "D", text: "Produk asing" },
+        ],
+        answerId: "B",
+        explanation: "Pancasila adalah dasar negara dan pedoman hidup.",
+        points: 2,
     },
 ];
 
